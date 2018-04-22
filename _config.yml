@@ -1,0 +1,59 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Kevin Technology
+description: >- # this means to ignore newlines until "baseurl:"
+  My name is Kevin Conley, and I am currently looking for a new software
+  engineering opportunity. Please contact me using any of the services below
+  if you would like to hire me. \\
+   \\
+  Previously I worked on graphics, UI, and application firmware for the
+  [Intel Vaunt smart glasses](https://www.theverge.com/2018/2/5/16966530/intel-vaunt-smart-glasses-announced-ar-video)
+  and several smart watches at [Pebble](https://www.pebble.com/).
+copyright: © 2018 Kevin Conley
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github: [metadata]
+twitter_username: kevindcon
+author:
+  social:
+    linkedin: kevincon
+    github: kevincon
+    email: https://kcon.wufoo.com/forms/z1gum7ve1625ou7
+paginate:      5
+paginate_path: '/page-:num/'
+accent_color: '#137ed9'
+accent_image: none
+hydejack:
+  no_google_fonts: true
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-hydejack
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
