@@ -2,7 +2,7 @@
 layout: page
 title: Side Projects
 menu: true
-order: 2
+order: 1
 permalink: /side-projects/
 ---
 
