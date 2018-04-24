@@ -1,0 +1,84 @@
+---
+layout: post
+title: Installing Gateway M6755 Wifi Drivers for Ubuntu
+date: '2010-07-21T11:34:00-07:00'
+tags:
+- ubuntu
+- wifi drivers
+- gateway m6755
+- ndiswrapper
+- lucid lynx
+- '10.04'
+tumblr_url: https://kevintechnology.com/post/841536945/installing-gateway-m6755-wifi-drivers-for-ubuntu
+---
+<p>I really like Ubuntu.  Especially since 10.04 Lucid Lynx was released.  The user interface is beautiful, and the operating system is very fast.  Right now we&rsquo;re using Ubuntu as the operating system for both the <a href="http://www.autoplug.org" target="_blank">AutoPlug</a> hardware platform as well as our development machines.</p>
+<p><img alt="image" height="250" src="http://i5.photobucket.com/albums/y196/Yaro67/MySpace/ubuntu-logo217.gif" width="217"/></p>
+<p>Installing Ubuntu is very easy, with the exception of installing Wifi drivers in my particular case.  Ubuntu does not natively support the Marvell TopDog Wifi card in my Gateway M6755 laptop.  Usually it would be easy to simply load the Windows .inf driver file for the card in Ubuntu using ndiswrapper, but the Marvell TopDog card is a little bit more difficult to install.  For my reference, and yours, here&rsquo;s how I install the driver for the Marvell TopDog Wifi card in Ubuntu.</p>
+<p><!-- more --></p>
+<p><strong>Prerequisites</strong></p>
+<p>You should have ndiswrapper installed in Ubuntu.  To do this, open a terminal window and type:</p>
+<blockquote>
+<div>
+<p>sudo apt-get install ndiswrapper-common ndiswrapper-utils-1.9 ndisgtk</p>
+</div>
+</blockquote>
+<p>You can also find these packages in Synaptic Package Manager.  Just search &ldquo;ndiswrapper.&rdquo;</p>
+<p>You also need to download the Windows .inf driver file for the Marvell TopDog card.  For your convenience, you can download it in a ZIP archive file from my website:  <a href="http://www.kevinschicken.com/downloads/NetMW14x.zip" target="_blank">Marvell TopDog Windows Driver (NetMW14x).</a> </p>
+<p><strong>Installing the Driver</strong></p>
+<p>Unzip the ZIP file you downloaded, open a terminal window, cd to the directory where you unzipped NetMW14x.inf, and run:</p>
+<blockquote>
+<div>
+<p>sudo ndiswrapper -i NetMW14x.inf</p>
+</div>
+</blockquote>
+<p>If it worked, you should see:</p>
+<blockquote>
+<div>
+<p>installing netmw14x &hellip;</p>
+</div>
+</blockquote>
+<p>You should now be able to run:</p>
+<blockquote>
+<div>
+<p>sudo ndiswrapper -l</p>
+</div>
+</blockquote>
+<p>And see:</p>
+<blockquote>
+<div>
+<p>netmw14x : driver installed</p>
+<p><span> </span>device (11AB:2A08) present</p>
+</div>
+</blockquote>
+<p>Now you just need to extract the firmware.  To do this, run:</p>
+<blockquote>
+<div>
+<p>sudo ndiswrapper -m</p>
+</div>
+</blockquote>
+<p>You should see:</p>
+<blockquote>
+<div>
+<p>adding &ldquo;alias wlan0 ndiswrapper&rdquo; to /etc/modprobe.d/ndiswrapper &hellip;</p>
+</div>
+</blockquote>
+<p>Now run:</p>
+<blockquote>
+<div>
+<p>sudo depmod -a</p>
+</div>
+</blockquote>
+<p>Finally, run:</p>
+<blockquote>
+<div>
+<p>sudo modprobe ndiswrapper</p>
+</div>
+</blockquote>
+<p>You should now be able to see wireless networks if you click the Wifi icon in the panel at the top of the screen.  However, you have to do one more thing so that Ubuntu will modprobe ndiswrapper at boot.</p>
+<p>In the terminal window, type:</p>
+<blockquote>
+<div>
+<p>sudo gedit /etc/modules</p>
+</div>
+</blockquote>
+<p>And add ndiswrapper to the list.  Save the file, and you should be good to go!</p>

@@ -1,0 +1,56 @@
+---
+layout: post
+title: How to Determine if Your Compiler is Inlining Your Functions
+date: '2013-05-07T02:32:00-07:00'
+tags: []
+tumblr_url: https://kevintechnology.com/post/49845258657/how-to-determine-if-your-compiler-is-inlining-your
+---
+<p><a href="http://en.wikipedia.org/wiki/Inline_function" target="_blank">Inlining functions</a> can potentially increase the performance of a program. When you mark a function with &ldquo;inline&rdquo;, the compiler will try to expand calls to the function to actually be the body of the function.</p>
+<p>The idea is that inlining a function will eliminate the overhead associated with calling that function, like pushing values onto the stack and triggering a context switch. However, depending on the program, performance could actually get worse because inlining functions increases the overall size of the code which can lead to instruction cache memory thrashing (i.e. the computer can&rsquo;t keep all of the instructions in its faster, short-term memory).</p>
+<p>To ask the compiler to inline a function in C, you can use the &ldquo;inline&rdquo; keyword when declaring your function:</p>
+<div>
+<pre><span>inline</span> <span>int</span> <span>plus_one</span>(<span>int</span> x) {
+    <span>return</span> x <span>+</span> <span>1;</span>
+}
+</pre>
+</div>
+<p>In the example above, we inline the (not very useful) plus_one() function because it only has one instruction and therefore saving the overhead of performing a full context switch is a useful optimization.</p>
+<p>Note that the &ldquo;inline&rdquo; keyword usually only asks the compiler to inline a function. The compiler might analyze the program and actually not inline a function, even if it has the &ldquo;inline&rdquo; keyword, because it thinks the inlining will not increase performance.</p>
+<p>This leaves developers wondering &ldquo;did the compiler actually inline my function?&rdquo;</p>
+<p>Some people will advise you to use the &ldquo;-Winline&rdquo; compiler flag to have the compiler output warnings/information about whether it is actually inlining the functions you precede with the &ldquo;inline&rdquo; keyword. But depending on your compiler, this might not be very useful. For example, here is the Intel&rsquo;s C/C++ Compiler (icc) inlining report output:</p>
+<div>
+<pre>&lt;matmul.c;37:74;IPO INLINING;dotprod;0&gt;
+INLINING REPORT: <span>(</span>dotprod<span>)</span> <span>[</span>1/2<span>=</span>50.0%<span>]</span>
+
+  -&gt; _mm_add_pd<span>(</span>EXTERN<span>)</span>
+  -&gt; _mm_mul_pd<span>(</span>EXTERN<span>)</span>
+  -&gt; _m_empty<span>(</span>EXTERN<span>)</span>
+  -&gt; _mm_setzero_pd<span>(</span>EXTERN<span>)</span>
+
+
+&lt;matmul.c;79:128;IPO INLINING;matmul;0&gt;
+INLINING REPORT: <span>(</span>matmul<span>)</span> <span>[</span>2/2<span>=</span>100.0%<span>]</span>
+
+  -&gt; INLINE <span>(</span>MANUAL<span>)</span>: dotprod<span>(</span>3<span>)</span> <span>(</span><span>isz</span> <span>=</span> 34<span>)</span> <span>(</span><span>sz</span> <span>=</span> 45 <span>(</span>21+24<span>))</span>
+    -&gt; _mm_setzero_pd<span>(</span>EXTERN<span>)</span>
+    -&gt; _m_empty<span>(</span>EXTERN<span>)</span>
+    -&gt; _mm_mul_pd<span>(</span>EXTERN<span>)</span>
+    -&gt; _mm_add_pd<span>(</span>EXTERN<span>)</span>
+  -&gt; INLINE <span>(</span>MANUAL<span>)</span>: dotprod<span>(</span>4<span>)</span> <span>(</span><span>isz</span> <span>=</span> 34<span>)</span> <span>(</span><span>sz</span> <span>=</span> 45 <span>(</span>21+24<span>))</span>
+    -&gt; _mm_setzero_pd<span>(</span>EXTERN<span>)</span>
+    -&gt; _m_empty<span>(</span>EXTERN<span>)</span>
+    -&gt; _mm_mul_pd<span>(</span>EXTERN<span>)</span>
+    -&gt; _mm_add_pd<span>(</span>EXTERN<span>)</span>
+  -&gt; _vla_free<span>(</span>EXTERN<span>)</span>
+  -&gt; _vla_alloc<span>(</span>EXTERN<span>)</span>
+</pre>
+</div>
+<p>What the heck does all of that mean? A friend helped me understand that the percentages indicate the number of locations that the compiler decided to inline the function, but I was not able to find a good reference/guide on the Internet on how to interpret the output for icc&rsquo;s inlining report.</p>
+<p>I have heard that gcc has a more readable inlining report, but I have not tried it yet.</p>
+<p>When I first wrote this blog post, I suggested looking at the generated assembly code to check if the compiler actually inlined the function. In the case of x86, this would involve searching for any &ldquo;call&rdquo; assembly instructions (&ldquo;call&rdquo; is the x86 way of calling a function).</p>
+<p>However, a friend pointed out that this is not a perfect way of determining whether a compiler inlined functions. Besides the fact that it is architecture specific (i.e. ARM and MIPS have different assembly instructions for calling functions):</p>
+<ol><li>It ignores indirect jumps, which is another valid way of calling a function (e.g. <span>leal %eax, jmp *%eax</span>).</li>
+<li>The linker might make a &ldquo;link-time optimization&rdquo; (or LTO) which changes whether or not the function is inlined.</li>
+</ol><p>So your best chance of understanding if your functions are being inlined is to look at the generated assembly code and the compiler&rsquo;s inlining report, but even those resources might not tell the whole story.</p>
+<p><em>&mdash;</em></p>
+<p><em>Thanks to Saleem </em><em>Abdulrasool for providing some really helpful insights for this post.</em></p>
