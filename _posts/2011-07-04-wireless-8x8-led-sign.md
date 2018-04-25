@@ -12,7 +12,7 @@ tags:
 tumblr_url: https://kevintechnology.com/post/7222952028/wireless-8x8-led-sign
 ---
 
-Remember that [four-panel 8x8 LED sign I programmed to scroll RSS feeds]({% link _posts/2011-06-02-scrolling-rss-feeds-on-an-8x8-led-sign-via-serial.md %})? Well thanks to the power of Xbee radios, now it’s wireless! The sign can now be controlled remotely from a computer connected to a transmitting Xbee radio. The transmitting Xbee wirelessly sends the data it receives over serial to the receiving Xbee, which is attached to the sign.
+Remember that [four-panel 8x8 LED sign I programmed to scroll RSS feeds]({% post_url 2011-06-02-scrolling-rss-feeds-on-an-8x8-led-sign-via-serial %})? Well thanks to the power of Xbee radios, now it’s wireless! The sign can now be controlled remotely from a computer connected to a transmitting Xbee radio. The transmitting Xbee wirelessly sends the data it receives over serial to the receiving Xbee, which is attached to the sign.
 
 ![Picture of LED sign with Xbee radio on top]({{ "/assets/wireless-led-sign.jpg" | absolute_url }})
 
