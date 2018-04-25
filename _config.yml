@@ -32,7 +32,7 @@ author:
     linkedin: kevincon
     github: kevincon
     email: https://kcon.wufoo.com/forms/z1gum7ve1625ou7
-paginate:      5
+paginate: 5
 paginate_path: '/page-:num/'
 accent_color: '#137ed9'
 accent_image: none
@@ -48,10 +48,10 @@ plugins:
   - jekyll-paginate
   - jekyll-youtube
 kramdown:
-  math_engine:         mathjax
+  math_engine: mathjax
   math_engine_opts:
-    preview:           true
-    preview_as_code:   true
+    preview: true
+    preview_as_code: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
