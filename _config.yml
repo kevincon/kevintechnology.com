@@ -36,6 +36,7 @@ accent_color: '#137ed9'
 accent_image: none
 hydejack:
   no_google_fonts: true
+  no_mark_external: true
 
 # Build settings
 markdown: kramdown
