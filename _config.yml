@@ -47,6 +47,11 @@ plugins:
   - jekyll_oembed
   - jekyll-paginate
   - jekyll-youtube
+kramdown:
+  math_engine:         mathjax
+  math_engine_opts:
+    preview:           true
+    preview_as_code:   true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
