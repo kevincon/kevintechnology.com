@@ -2,6 +2,6 @@
 layout: list
 title: Archive
 menu: true
-order: 2
+order: 3
 permalink: /archive/
 ---
