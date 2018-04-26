@@ -6,7 +6,8 @@ tags:
 - pennapps
 - hackathon
 - app
-tumblr_url: https://kevintechnology.com/post/2839884068/presenting-want2joinme-at-pennappsmobile-2011
+redirect_from:
+- /post/2839884068/presenting-want2joinme-at-pennappsmobile-2011
 ---
 
 Here is a video of me presenting a mobile web application called "want2join.me" that I created with some of my friends at the 2011 PennApps Mobile hackathon.

@@ -6,7 +6,8 @@ tags:
 - christmas
 - electronics
 - dorm
-tumblr_url: https://kevintechnology.com/post/2197267356/o-circuit-tree-o-circuit-tree
+redirect_from:
+- /post/2197267356/o-circuit-tree-o-circuit-tree
 ---
 
 Every year around the holidays, my dorm, [Stouffer College House](http://stouffer.house.upenn.edu/), puts on a program called Holiday Hobbit. The name is just an attempt to make the program secular. It’s really just [Secret Santa](http://en.wikipedia.org/wiki/Secret_Santa) for Stouffer residents. The only rule is that you cannot spend more than $10 on the gift.

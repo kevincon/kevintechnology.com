@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", '~> 0.6'
   gem 'jekyll_oembed', '~> 0.0.3'
   gem "jekyll-paginate", '~> 1.1.0'
+  gem 'jekyll-redirect-from', '~> 0.13.0'
   gem 'jekyll-youtube', '~> 1.0'
 end
 

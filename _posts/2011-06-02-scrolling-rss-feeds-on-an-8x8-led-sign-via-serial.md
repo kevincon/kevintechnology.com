@@ -8,7 +8,8 @@ tags:
 - led
 - microcontroller
 - rss
-tumblr_url: https://kevintechnology.com/post/6135479577/scrolling-rss-feeds-on-an-8x8-led-sign-via-serial
+redirect_from:
+- /post/6135479577/scrolling-rss-feeds-on-an-8x8-led-sign-via-serial
 ---
 
 This past week I decided I was going to figure out how to send text over serial to the 8x8 LED sign my father and I built a few years ago.

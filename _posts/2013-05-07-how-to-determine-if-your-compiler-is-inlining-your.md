@@ -7,7 +7,8 @@ tags:
 - inline
 - icc
 - programming
-tumblr_url: https://kevintechnology.com/post/49845258657/how-to-determine-if-your-compiler-is-inlining-your
+redirect_from:
+- /post/49845258657/how-to-determine-if-your-compiler-is-inlining-your
 ---
 
 [Inlining functions](https://en.wikipedia.org/wiki/Inline_function) can potentially increase the performance of a program. When you mark a function with `inline`, the compiler will try to expand calls to the function to actually be the body of the function.

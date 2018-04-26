@@ -6,7 +6,8 @@ tags:
 - scala
 - homebrew
 - mac
-tumblr_url: https://kevintechnology.com/post/26375906420/the-easy-way-to-install-scala-on-mac-os-x
+redirect_from:
+- /post/26375906420/the-easy-way-to-install-scala-on-mac-os-x
 ---
 
 If you download Scala from the [official site](https://www.scala-lang.org/downloads), it comes as a tgz archive of folders containing binaries. In other words, it’s a stand-alone install that you can put wherever you want. If you’re like me and would prefer Scala tucked away in the operating system, you’ll want to start by installing the awesome Mac package manager, [Homebrew](https://brew.sh/).

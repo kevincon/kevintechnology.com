@@ -9,7 +9,8 @@ tags:
 - montreal
 - mcafee
 - windows
-tumblr_url: https://kevintechnology.com/post/23854403086/how-i-thwarted-a-laptop-thief-with-the-help-of
+redirect_from:
+- /post/23854403086/how-i-thwarted-a-laptop-thief-with-the-help-of
 ---
 
 My brother’s laptop was stolen out of a car during Spring Break 2012 while he was visiting Montreal, Quebec.

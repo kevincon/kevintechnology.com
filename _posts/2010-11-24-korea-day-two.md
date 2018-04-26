@@ -5,7 +5,8 @@ date: '2010-11-24T06:11:40-08:00'
 tags:
 - korea
 - autoplug
-tumblr_url: https://kevintechnology.com/post/1669482990/korea-day-two
+redirect_from:
+- /post/1669482990/korea-day-two
 ---
 
 This post is part of a series of journals I wrote while traveling to Seoul, South Korea to compete in the 2010 World Embedded Software Contest, [for which my team's project won the grand prize](http://www.seas.upenn.edu/media/feature-autoplug.php).

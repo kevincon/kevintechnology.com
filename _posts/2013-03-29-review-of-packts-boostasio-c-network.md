@@ -8,7 +8,8 @@ tags:
 - c++
 - boost
 - asio
-tumblr_url: https://kevintechnology.com/post/46644188589/review-of-packts-boostasio-c-network
+redirect_from:
+- /post/46644188589/review-of-packts-boostasio-c-network
 ---
 
 I was asked to review an eBook based on a [blog post I wrote a while back on raw sockets in the Boost.Asio C++ library]({% post_url 2012-07-29-using-raw-sockets-in-asioboostasio %}).

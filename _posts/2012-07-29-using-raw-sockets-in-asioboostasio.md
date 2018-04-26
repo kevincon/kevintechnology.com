@@ -6,7 +6,8 @@ tags:
 - boost
 - asio
 - sockets
-tumblr_url: https://kevintechnology.com/post/28292791671/using-raw-sockets-in-asioboostasio
+redirect_from:
+- /post/28292791671/using-raw-sockets-in-asioboostasio
 ---
 
 This past week I got to play with the cross-platform Asio and Boost.Asio C++ libraries for socket programming.
