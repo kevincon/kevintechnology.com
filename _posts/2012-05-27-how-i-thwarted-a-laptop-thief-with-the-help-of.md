@@ -24,7 +24,7 @@ You can imagine my surprise when I looked at the list and saw that not only was 
 
 I ran a WHOIS lookup on the IP address to see if I could learn more about who was behind it. The IP address turned out to be located in Montreal and belonged to an ISP called Vidéotron.
 
-My brother never got a chance to turn on his laptop before it was stolen in Montreal, so someone in Montreal had our laptop and was still using our McAfee Antivirus subscription! The thief might have been able to wipe my brother’s logon password (it’s possible to do this with an [Ultimate Boot CD](http://pogostick.net/~pnh/ntpasswd/)) to use his software and access his data.
+My brother never got a chance to turn on his laptop before it was stolen in Montreal, so someone in Montreal had our laptop and was still using our McAfee Antivirus subscription! The thief might have been able to wipe my brother’s logon password (it’s possible to do this with an [Ultimate Boot CD](http://www.ultimatebootcd.com)) to use his software and access his data.
 
 I went to Vidéotron’s website and found a form to submit an incident of Internet abuse (seemed somewhat related). I submitted a description of the laptop and the IP address and asked them what I should do. They responded:
 

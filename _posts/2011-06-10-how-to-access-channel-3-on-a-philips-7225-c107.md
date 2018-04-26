@@ -16,7 +16,7 @@ I thought about entitling this article “How to Play Nintendo 64 on a Philips 7
 
 ![Picture of hotel TV displaying Diddy Kong Racing]({{ "/assets/tv-diddy-kong-racing.jpg" | absolute_url }})
 
-First, a little back story:  I’m staying at an extended stay hotel in Mountain View, CA for the summer while I work at [Bump Technologies](https://bu.mp). The hotel is very nice with a few minor exceptions (weak Internet signal and no oven).  
+First, a little back story:  I’m staying at an extended stay hotel in Mountain View, CA for the summer while I work at [Bump Technologies](http://bu.mp). The hotel is very nice with a few minor exceptions (weak Internet signal and no oven).  
 
 One slightly more annoying problem is that the room’s TV only has a coaxial cable/antenna input. No composite video. No S-video. Nothing else. I brought my Nintendo 64 with me hoping to play it on the TV, but first I would need to purchase a Nintendo 64 RF switch, which lets you connect a Nintendo 64 to older TVs through the coaxial cable/antenna input.
 

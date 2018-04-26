@@ -55,7 +55,7 @@ This is the first Boost.Asio book I have looked at, but after reading this book 
 
 This free online book is formatted as a series of HTML pages, although it can be purchased as an eBook or PDF. It looks like it has been updated to a full-fledged eBook sold on Amazon, B&N, etc. to support the July 2011 version of the Boost libraries. Unlike the book I just reviewed, this online resource covers all of the Boost libraries, not just Boost.Asio. A downside to that approach is that it does not have as much detail or as many examples as the Packt book.
 
-[Boost.Asio by Christopher Kohlhoff](https://boost.cowic.de/rc/pdf/asio_doc.pdf)
+[Boost.Asio by Christopher Kohlhoff](http://boost.cowic.de/rc/pdf/asio_doc.pdf)
 
 This free online PDF was written by the author of the Boost.Asio library! I used it when I worked with Boost.Asio a while back, and it’s a great resource for pretty much everything you can do with the library. However, it is a little outdated (it was last modified in 2009).
 
