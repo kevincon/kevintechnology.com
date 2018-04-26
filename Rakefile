@@ -31,6 +31,7 @@ task :test => [:build] do
   puts 'Testing site...'.bold
   options = {
     :allow_hash_href => true,
+    :assume_extension => true,
     :check_external_hash => true,
     :check_html => true,
     :check_img_http => true,
