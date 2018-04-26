@@ -26,6 +26,14 @@ group :jekyll_plugins do
   gem 'jekyll-youtube', '~> 1.0'
 end
 
+group :test do
+  gem 'html-proofer', '~> 3.4'
+end
+
+group :development do
+  gem 'rake', '~> 11.2', '>= 11.2.2'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
