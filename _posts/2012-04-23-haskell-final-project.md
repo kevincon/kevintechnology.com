@@ -8,7 +8,8 @@ tags:
 - project
 - penn
 - cis194
-tumblr_url: https://kevintechnology.com/post/21700843268/haskell-final-project
+redirect_from:
+- /post/21700843268/haskell-final-project
 ---
 
 For my Haskell final project, I contributed to [Chris Done’s](https://chrisdone.com) Haskell library for the Kinect ([https://github.com/chrisdone/freenect](https://github.com/chrisdone/freenect)) that wraps the functionality of the open-source `libfreenect` library. My contribution was adding support for the RGB video camera (previously only support for the depth camera existed).

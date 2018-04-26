@@ -10,7 +10,8 @@ tags:
 - mario
 - rom
 - firmware
-tumblr_url: https://kevintechnology.com/post/157894360030/porting-game-boy-emulators-to-the-pebble-time
+redirect_from:
+- /post/157894360030/porting-game-boy-emulators-to-the-pebble-time
 ---
 
 I worked on UI and graphics firmware at [Pebble](https://en.wikipedia.org/wiki/Pebble_%28watch%29) from April 2015 until the company was [acquired by Fitbit](https://investor.fitbit.com/press/press-releases/press-release-details/2016/Fitbit-Inc-Acquires-Assets-from-Pebble/default.aspx) in December 2016. One of my favorite internal hackathon projects I worked on with some Pebble coworkers involved porting [Game Boy](https://en.wikipedia.org/wiki/Game_Boy) [emulators](https://en.wikipedia.org/wiki/Emulator) to the [Pebble Time](https://en.wikipedia.org/wiki/Pebble_Time).

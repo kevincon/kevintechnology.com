@@ -6,7 +6,8 @@ tags:
 - korea
 - world embedded software contest
 - autoplug
-tumblr_url: https://kevintechnology.com/post/1705447331/korea-day-three
+redirect_from:
+- /post/1705447331/korea-day-three
 ---
 
 This post is part of a series of journals I wrote while traveling to Seoul, South Korea to compete in the 2010 World Embedded Software Contest, [for which my team's project won the grand prize](http://www.seas.upenn.edu/media/feature-autoplug.php).

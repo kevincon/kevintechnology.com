@@ -8,7 +8,8 @@ tags:
 - stanford
 - cs229
 - github
-tumblr_url: https://kevintechnology.com/post/71621133663/using-machine-learning-to-recommend-heroes-for
+redirect_from:
+- /post/71621133663/using-machine-learning-to-recommend-heroes-for
 ---
 
 I took Stanford’s machine learning class, CS 229, this past quarter. For my final project, I worked with [Daniel Perry](https://www.linkedin.com/in/danieljamesperry) to apply a few different machine learning algorithms to the problem of recommending heroes for Dota 2 matches.

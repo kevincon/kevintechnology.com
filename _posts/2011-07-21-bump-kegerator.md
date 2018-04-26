@@ -8,7 +8,8 @@ tags:
 - kegerator
 - internship
 - electronics
-tumblr_url: https://kevintechnology.com/post/7890475645/bump-kegerator
+redirect_from:
+- /post/7890475645/bump-kegerator
 ---
 
 For this blog post I’m going to redirect you to [Bump’s intern blog website](https://web.archive.org/web/20130316181739/bumpinterns.posterous.com/bump-for-a-beer). :)

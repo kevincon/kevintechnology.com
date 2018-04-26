@@ -9,7 +9,8 @@ tags:
 - nintendo 64
 - diddy kong racing
 - RF switch
-tumblr_url: https://kevintechnology.com/post/6410448838/how-to-access-channel-3-on-a-philips-7225-c107
+redirect_from:
+- /post/6410448838/how-to-access-channel-3-on-a-philips-7225-c107
 ---
 
 I thought about entitling this article “How to Play Nintendo 64 on a Philips 7225 C107 Hotel TV,” but I figured this crazy procedure could be generalized for anyone trying to hook up a peripheral device to this particular type of TV.

@@ -8,7 +8,8 @@ tags:
 - audit
 - open-source
 - pennapps
-tumblr_url: https://kevintechnology.com/post/61323921846/preventing-cheating-at-hackathons
+redirect_from:
+- /post/61323921846/preventing-cheating-at-hackathons
 ---
 
 ![Picture of Fry from Futurama with caption "Not sure if really good at programming or started coding before hackathon"]({{ "/assets/futurama-hackathon-cheating.jpg" | absolute_url }})

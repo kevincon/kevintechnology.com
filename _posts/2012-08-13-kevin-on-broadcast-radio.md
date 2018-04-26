@@ -7,7 +7,8 @@ tags:
 - wxpn
 - writing
 - penn
-tumblr_url: https://kevintechnology.com/post/29354353058/kevin-on-broadcast-radio
+redirect_from:
+- /post/29354353058/kevin-on-broadcast-radio
 ---
 
 Did you know that I had a brief stint as a radio personality? Well, sort of…

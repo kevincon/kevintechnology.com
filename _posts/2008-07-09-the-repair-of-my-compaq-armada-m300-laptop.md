@@ -5,7 +5,8 @@ date: '2008-07-09T21:00:00-07:00'
 tags:
 - compaq armada m300
 - repair
-tumblr_url: https://kevintechnology.com/post/824699336/the-repair-of-my-compaq-armada-m300-laptop
+redirect_from:
+- /post/824699336/the-repair-of-my-compaq-armada-m300-laptop
 ---
 
 Here is my detailed account of how I brought my four-year-old Compaq Armada M300 laptop back to life from its supposed death.

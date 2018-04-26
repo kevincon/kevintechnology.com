@@ -47,6 +47,8 @@ GEM
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.13.0)
+      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-theme-hydejack (7.5.1)
@@ -101,6 +103,7 @@ DEPENDENCIES
   jekyll (~> 3.7.3)
   jekyll-feed (~> 0.6)
   jekyll-paginate (~> 1.1.0)
+  jekyll-redirect-from (~> 0.13.0)
   jekyll-theme-hydejack
   jekyll-youtube (~> 1.0)
   jekyll_oembed (~> 0.0.3)

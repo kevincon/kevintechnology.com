@@ -10,7 +10,8 @@ tags:
 - ndiswrapper
 - lucid lynx
 - '10.04'
-tumblr_url: https://kevintechnology.com/post/841536945/installing-gateway-m6755-wifi-drivers-for-ubuntu
+redirect_from:
+- /post/841536945/installing-gateway-m6755-wifi-drivers-for-ubuntu
 ---
 
 I really like Ubuntu.  Especially since 10.04 Lucid Lynx was released.  The user interface is beautiful, and the operating system is very fast.  Right now we’re using Ubuntu as the operating system for both the [AutoPlug hardware platform](https://www.youtube.com/watch?v=1YGamFKYLnA) as well as our development machines.

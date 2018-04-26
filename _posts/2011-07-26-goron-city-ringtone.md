@@ -7,7 +7,8 @@ tags:
 - ringtone
 - nintendo 64
 - legend of zelda
-tumblr_url: https://kevintechnology.com/post/8119797571/goron-city-ringtone
+redirect_from:
+- /post/8119797571/goron-city-ringtone
 ---
 
 I made a ringtone of the Goron City theme from Legend of Zelda: Ocarina of Time.  

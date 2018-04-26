@@ -6,7 +6,8 @@ tags:
 - keyboard
 - gateway m6755
 - repair
-tumblr_url: https://kevintechnology.com/post/824542446/how-to-replace-the-keyboard-of-a-gateway-m6755
+redirect_from:
+- /post/824542446/how-to-replace-the-keyboard-of-a-gateway-m6755
 ---
 
 Before I went to college I purchased a Gateway M6755 laptop.  It has served me well for the past two years, but two years of schoolwork, instant messaging, coding, and Tetris can do a lot of damage to a laptop, particularly its keyboard.

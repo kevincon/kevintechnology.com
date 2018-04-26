@@ -8,7 +8,8 @@ tags:
 - sd card
 - format
 - angstrom
-tumblr_url: https://kevintechnology.com/post/29649230627/formatting-an-sd-card-for-the-beagleboardxmbone
+redirect_from:
+- /post/29649230627/formatting-an-sd-card-for-the-beagleboardxmbone
 ---
 
 I about tore my hair out on this one.
