@@ -36,12 +36,15 @@ task :test => [:build] do
     :check_html => true,
     :check_img_http => true,
     :check_opengraph => true,
-    :check_sri => true,
     # Complains this is an empty file since it just redirects to the PDF
     :file_ignore => ['_site/resume.html'],
     :internal_domains => ['kevintechnology.com'],
-    # These domains block htmlproofer
-    :url_ignore => [/linkedin.com/, /blogspot.com/],
+    :url_ignore => [
+      # These domains block htmlproofer
+      /linkedin.com/, /blogspot.com/,
+      # These hrefs are used for jquery magic on uwave "how it works" page
+      '#7seg', '#arduino', '#client', '#materials', '#microwave', '#server', '#videos', 
+    ],
   }
   begin
     HTMLProofer.check_directory("_site", options).run
