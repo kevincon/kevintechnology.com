@@ -30,6 +30,7 @@ author:
   social:
     linkedin: kevincon
     email: mailto:mail@kevintechnology.com
+google_analytics: UA-17601169-1
 paginate: 5
 paginate_path: '/page-:num/'
 accent_color: '#137ed9'
