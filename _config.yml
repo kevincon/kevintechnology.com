@@ -31,6 +31,7 @@ author:
     linkedin: kevincon
     email: mailto:mail@kevintechnology.com
 google_analytics: UA-17601169-1
+disqus: kevintechnology
 paginate: 5
 paginate_path: '/page-:num/'
 accent_color: '#137ed9'
@@ -38,6 +39,11 @@ accent_image: none
 hydejack:
   no_google_fonts: true
   no_mark_external: true
+defaults:
+  - scope:
+      type: posts
+    values:
+      comments: true
 
 # Build settings
 markdown: kramdown
