@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Review of Packt's "Boost.Asio C++ Network Programming" eBook
-date: '2013-03-29T21:02:00-07:00'
+date: '2013-03-29T21:02:00-08:00'
 tags:
 - review
 - ebook

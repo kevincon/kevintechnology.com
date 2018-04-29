@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Access Channel 3 on a Philips 7225 C107 Hotel TV
-date: '2011-06-10T22:40:39-07:00'
+date: '2011-06-10T22:40:39-08:00'
 tags:
 - hotel
 - tv

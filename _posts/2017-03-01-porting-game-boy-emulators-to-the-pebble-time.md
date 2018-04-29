@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Porting Game Boy Emulators to the Pebble Time
-date: '2017-03-01T22:38:12-08:00'
+date: '2017-03-01T22:38:12-07:00'
 tags:
 - pebble
 - gameboy

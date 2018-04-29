@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Goron City Ringtone
-date: '2011-07-26T23:16:38-07:00'
+date: '2011-07-26T23:16:38-05:00'
 tags:
 - goron city
 - ringtone

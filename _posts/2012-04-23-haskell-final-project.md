@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haskell Final Project
-date: '2012-04-23T21:52:00-07:00'
+date: '2012-04-23T21:52:00-08:00'
 tags:
 - haskell
 - kinect

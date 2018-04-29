@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Repair of My Compaq Armada M300 Laptop
-date: '2008-07-09T21:00:00-07:00'
+date: '2008-07-09T21:00:00-08:00'
 tags:
 - compaq armada m300
 - repair

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling RSS Feeds on an 8x8 LED Sign via Serial
-date: '2011-06-02T23:49:56-07:00'
+date: '2011-06-02T23:49:56-05:00'
 tags:
 - arduino
 - python
