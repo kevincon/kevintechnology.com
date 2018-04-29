@@ -58,7 +58,7 @@ Awards:
 
 A quadrotor equipped with a Microsoft Kinect that creates 3D maps of buildings.
 
-Teammates: Kelsey Duncombe-Smith, [Bill Etter](http://williametter.com), Paul Gurniak, Matt Hale, Alfredo Muniz, [Teddy Zhang](http://teddyzhang.com)
+Teammates: Kelsey Duncombe-Smith, [Bill Etter](http://williametter.com), Paul Gurniak, Matt Hale, Alfredo Muniz, [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
 Advisor: [Rahul Mangharam](http://www.seas.upenn.edu/~rahulm/)
 
@@ -91,7 +91,7 @@ Awards:
 
 A microwave hacked to play YouTube videos, completed in under 40 hours.
 
-Teammates:  [Varun Sampath](http://vsampath.com), [Ben Shyong](http://www.benjaminshyong.com/), [Teddy Zhang](http://teddyzhang.com)
+Teammates:  [Varun Sampath](http://vsampath.com), [Ben Shyong](http://www.benjaminshyong.com/), [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
 Awards:
 
@@ -123,7 +123,7 @@ Awards:
 
 A prototype automotive architecture for plug-n-play services.
 
-Teammates: Gabe Torres, [Teddy Zhang](http://teddyzhang.com)
+Teammates: Gabe Torres, [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
 Advisor: [Rahul Mangharam](http://www.seas.upenn.edu/~rahulm/)
 
@@ -154,7 +154,7 @@ Teammate: [Evan Benshetler](http://www.linkedin.com/pub/evan-benshetler/17/930/
 
 A Rails-based real-time visualization of SEPTA’s regional rail trains, completed in under 40 hours.
 
-Teammates: [Varun Sampath](http://vsampath.com), [Ben Shyong](http://www.benjaminshyong.com/), [Teddy Zhang](http://teddyzhang.com)
+Teammates: [Varun Sampath](http://vsampath.com), [Ben Shyong](http://www.benjaminshyong.com/), [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
 Awards:
 
