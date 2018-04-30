@@ -42,33 +42,33 @@ Then, on April 15, I asked Kacha if she wanted to try a new VR game I found. I t
 
 In VR, Kacha found herself in an [auditorium](https://www.turbosquid.com/3d-models/3d-concert-hall-chairs-model/991147). On the stage, an orchestra started to play one of Kacha's favorite orchestral pieces: the first movement of [Scheherazade by Rimsky-Korsakov](https://en.wikipedia.org/wiki/Scheherazade_%28Rimsky-Korsakov%29). Actually it was just [this Creative Commons video recording of the Kaohsiung American School orchestra playing](https://youtu.be/xszIc_NYalo?t=3m40s) because I did not feel confident animating an entire orchestra in 3D.
 
-# (INSERT GIF OF LOOKING AT ORCHESTRA IN VR)
+![Animated GIF of the orchestra in VR]({{ "/assets/proposal/orchestra.gif" | absolute_url }})
 
 Every member of the audience in the auditorium was the same [low-polygon old man](https://www.cgtrader.com/free-3d-models/character/man/man-in-suit-f3d672f00f8cb4706839f2e12d2f3895) gently swaying to the music. I had duplicated the character to save some time.
 
-# (INSERT GIF OF LOOKING AT CHARACTERS IN VR)
+![Animated GIF of looking at the audience members in VR]({{ "/assets/proposal/characters.gif" | absolute_url }})
 
 About a minute into the orchestra's playing, the music was suddenly interrupted by my voice saying "stop the music!". A screen came down in front of the orchestra, and a video of me started to play.
 
-# (INSERT GIF OF SCREEN COMING DOWN SHOWING MY VIDEO)
+![Animated GIF of the screen with my video coming down in VR]({{ "/assets/proposal/screen.gif" | absolute_url }})
 
 In the video of me that played, I told Kacha that I know she didn't want me to propose in front of a lot of people, and with that the members of the audience disappeared.
 
-# (INSERT GIF OF CHARACTERS DISAPPEARING)
+![Animated GIF of the audience members disappearing in VR]({{ "/assets/proposal/disappear.gif" | absolute_url }})
 
 During the video, I told Kacha how much I love her and that I want to spend the rest of my life with her.
 
 At the end of my video, I said "As promised in our past discussions, here's a pizza box." Then a pizza box appeared in front of her.
 
-# (INSERT GIF OF PIZZA BOX APPEARING)
+![Animated GIF of a pizza box appearing in VR]({{ "/assets/proposal/pizza-box.gif" | absolute_url }})
 
 _I told you the pizza box joke would be important._
 
-My video then froze and the pizza box opened to say "Take off VR headset now!".
+My video then froze and the pizza box opened to reveal text reading "Remove VR headset now!".
 
-# (INSERT GIF OF PIZZA BOX OPENING, DOUBLE CHECK ACTUAL TEXT)
+![Animated GIF of the pizza box opening in VR]({{ "/assets/proposal/pizza-box-opens.gif" | absolute_url }})
 
-Kacha took off the headset to see me in front of her down on one knee.
+Kacha took off the headset to see me in front of her down on one knee holding a ring.
 
 # (INSERT GIF OF KACHA TAKING OFF HEADSET)
 
