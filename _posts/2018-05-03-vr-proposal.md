@@ -1,6 +1,9 @@
 ---
 layout: post
 title: How I Used Virtual Reality to Propose to my Girlfriend
+description: 'Spoiler: she said yes!'
+hide_description: true
+image: /assets/proposal/preview.png
 date: '2018-05-03T11:15:26-07:00'
 tags:
 - virtual reality
