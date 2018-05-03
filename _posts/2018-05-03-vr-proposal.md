@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How I Used Virtual Reality to Propose to my Girlfriend"
-date: "2018-05-03T11:15:26-07:00"
+title: How I Used Virtual Reality to Propose to my Girlfriend
+date: '2018-05-03T11:15:26-07:00'
 tags:
 - virtual reality
 - unity
