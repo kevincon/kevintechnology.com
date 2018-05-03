@@ -43,13 +43,22 @@ task :test => [:build] do
       # These domains block htmlproofer
       /linkedin.com/, /blogspot.com/,
       # These hrefs are used for jquery magic on uwave "how it works" page
-      '#7seg', '#arduino', '#client', '#materials', '#microwave', '#server', '#videos', 
+      '#7seg', '#arduino', '#client', '#materials', '#microwave', '#server', '#videos',
     ],
   }
   begin
     HTMLProofer.check_directory("_site", options).run
   rescue => msg
     puts "#{msg}"
+    exit 1
+  end
+
+  puts 'Checking post-build...'.bold
+  begin
+    sh "test -z \"$(git status --porcelain)\""
+  rescue => msg
+    puts "Working directory is not clean:"
+    sh "git status --porcelain"
     exit 1
   end
 end
