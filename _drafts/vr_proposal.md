@@ -36,39 +36,39 @@ So over several weeks I worked in secret, mostly late at night after Kacha was a
 
 Then, on April 15, 2018, I asked Kacha if she wanted to try a new VR game I found. I told her it was kind of a low-quality indie game but that I thought she might enjoy it. After she put on the headset, I started recording video of her on my phone.
 
-![Animated GIF of Kacha looking around]({{ "/assets/proposal/looking-around.gif" | absolute_url }})
+{% video /assets/proposal/looking-around.mp4 %}
 
 In VR, Kacha found herself in an [auditorium](https://www.turbosquid.com/3d-models/3d-concert-hall-chairs-model/991147). On the stage, an orchestra started to play one of Kacha's favorite orchestral pieces: the first movement of [Scheherazade by Rimsky-Korsakov](https://en.wikipedia.org/wiki/Scheherazade_%28Rimsky-Korsakov%29). Actually it was just [this Creative Commons video recording of the Kaohsiung American School orchestra playing](https://youtu.be/xszIc_NYalo?t=3m40s) because I did not feel confident animating an entire orchestra in 3D.
 
-![Animated GIF of the orchestra in VR]({{ "/assets/proposal/orchestra.gif" | absolute_url }})
+{% video /assets/proposal/orchestra.mp4 %}
 
 Every member of the audience in the auditorium was the same [low-polygon old man](https://www.cgtrader.com/free-3d-models/character/man/man-in-suit-f3d672f00f8cb4706839f2e12d2f3895) gently swaying to the music. I had duplicated the character to save some time. 😉
 
-![Animated GIF of looking at the audience members in VR]({{ "/assets/proposal/characters.gif" | absolute_url }})
+{% video /assets/proposal/characters.mp4 %}
 
 About a minute into the orchestra's playing, the music was suddenly interrupted by my voice saying "stop the music!". A screen came down in front of the orchestra, and a video of me started to play.
 
-![Animated GIF of the screen with my video coming down in VR]({{ "/assets/proposal/screen.gif" | absolute_url }})
+{% video /assets/proposal/screen.mp4 %}
 
 In the video of me that played, I told Kacha that I know she didn't want me to propose in front of a lot of people, and with that the members of the audience disappeared. 💨
 
-![Animated GIF of the audience members disappearing in VR]({{ "/assets/proposal/disappear.gif" | absolute_url }})
+{% video /assets/proposal/disappear.mp4 %}
 
 During the video, I told Kacha how much I love her and that I want to spend the rest of my life with her. ❤️
 
 At the end of my video, I said "As promised in our past discussions, here's a pizza box." Then a pizza box appeared in front of her.
 
-![Animated GIF of a pizza box appearing in VR]({{ "/assets/proposal/pizza-box.gif" | absolute_url }})
+{% video /assets/proposal/pizza-box.mp4 %}
 
 _I told you the pizza box joke would be important._
 
 My video then froze and the pizza box opened to reveal text reading "Remove VR headset now!".
 
-![Animated GIF of the pizza box opening in VR]({{ "/assets/proposal/pizza-box-opens.gif" | absolute_url }})
+{% video /assets/proposal/pizza-box-opens.mp4 %}
 
 Kacha took off the headset to see me in front of her on one knee holding a ring. I asked her to marry me, and she said yes! 🎉
 
-![Animated GIF of Kacha taking off the headset and accepting my proposal]({{ "/assets/proposal/proposal.gif" | absolute_url }})
+{% video /assets/proposal/proposal.mp4 %}
 
 Afterwards, Kacha told me she loved the proposal. She said she was incredibly surprised and appreciated how much work I put into creating the VR experience for her. And she said she was happy to see the reference to our pizza box joke. 🍕
 
