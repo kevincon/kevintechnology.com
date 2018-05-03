@@ -50,7 +50,7 @@ About a minute into the orchestra's playing, the music was suddenly interrupted 
 
 {% video /assets/proposal/screen.mp4 %}
 
-In the video of me that played, I told Kacha that I know she didn't want me to propose in front of a lot of people, and with that the members of the audience disappeared. 💨
+In the video of me that played, I told Kacha that I knew she didn't want me to propose in front of a lot of people, and with that the members of the audience disappeared. 💨
 
 {% video /assets/proposal/disappear.mp4 %}
 
@@ -74,4 +74,4 @@ Afterwards, Kacha told me she loved the proposal. She said she was incredibly su
 
 ![Picture of me and Kacha celebrating our engagement]({{ "/assets/proposal/engaged.jpg" | absolute_url }})
 
-I learned a lot about Unity while working on this project, and despite a few technical challenges that I will blog about separately, working with Unity and the Windows Mixed Reality Toolkit was a pretty enjoyable experience.
+I learned a lot about Unity while working on this project, and despite a few technical challenges that I will blog about separately, working with Unity and the Windows Mixed Reality Toolkit was an enjoyable experience.
