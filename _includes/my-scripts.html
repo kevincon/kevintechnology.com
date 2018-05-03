@@ -1,5 +1,12 @@
 <link href="https://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
 
+<script defer src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+
 <script>
-    loadJSDeferred("https://vjs.zencdn.net/6.6.3/video.js");
+    document.getElementsByTagName('hy-push-state')[0].addEventListener('hy-push-state-load', function() {
+        var players = document.getElementsByClassName("video-js");
+        for (var i = 0; i < players.length; i++) {
+            videojs(players[i]);
+        };
+    });
 </script>
