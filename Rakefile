@@ -29,6 +29,10 @@ end
 desc "Perform all testing on the built HTML"
 task :test => [:build] do
   puts 'Testing site...'.bold
+  typhoeus_configuration = {
+    :timeout => 10,
+    :verbose => true,
+  }
   options = {
     :allow_hash_href => true,
     :assume_extension => true,
@@ -39,6 +43,7 @@ task :test => [:build] do
     # Complains this is an empty file since it just redirects to the PDF
     :file_ignore => ['_site/resume.html'],
     :internal_domains => ['kevintechnology.com'],
+    :typhoeus => typhoeus_configuration,
     :url_ignore => [
       # These domains block htmlproofer
       /linkedin.com/, /blogspot.com/,
