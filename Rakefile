@@ -29,6 +29,10 @@ end
 desc "Perform all testing on the built HTML"
 task :test => [:build] do
   puts 'Testing site...'.bold
+  typhoeus_configuration = {
+    :connecttimeout => 300,
+    :timeout => 300,
+  }
   options = {
     :allow_hash_href => true,
     :assume_extension => true,
@@ -39,11 +43,14 @@ task :test => [:build] do
     # Complains this is an empty file since it just redirects to the PDF
     :file_ignore => ['_site/resume.html'],
     :internal_domains => ['kevintechnology.com'],
+    :typhoeus => typhoeus_configuration,
     :url_ignore => [
       # These domains block htmlproofer
       /linkedin.com/, /blogspot.com/,
       # These hrefs are used for jquery magic on uwave "how it works" page
       '#7seg', '#arduino', '#client', '#materials', '#microwave', '#server', '#videos',
+      # This href is used by the js for the navigation drawer
+      '#_navigation',
     ],
   }
   begin
