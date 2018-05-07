@@ -24,6 +24,8 @@ deploy:
   target-branch: master
   github-token: $GITHUB_TOKEN
   keep-history: true
+  on:
+    condition: '"$TRAVIS_EVENT_TYPE" != "cron"'
 
 env:
   global:
