@@ -97,7 +97,7 @@ Awards:
 
 *   First Place, PennApps Hackathon, Fall 2011
 
-[Website](https://static.kevintechnology.com/uwave/) &#124; [Video](http://www.youtube.com/watch?&v=X5quQ_nnKFQ) &#124; [Code](https://github.com/vsampath/uWave)
+[Website]({{ "/uwave/" | absolute_url }}) &#124; [Video](http://www.youtube.com/watch?&v=X5quQ_nnKFQ) &#124; [Code](https://github.com/vsampath/uWave)
 
 * * *
 
