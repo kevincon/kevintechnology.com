@@ -29,8 +29,8 @@ We picked BitBoy because it was written in C and had already been demonstrated t
 We ported BitBoy into a modified version of the Pebble firmware instead of as a regular Pebble SDK app for a few important reasons:
 
 * Game Boy emulation requires more RAM than is available to Pebble SDK apps (only 64 KB for RAM and code combined), so by building the emulator into the firmware we could resize the firmware’s RAM partitions to support the emulator’s memory requirements
-* [Pebble SDK apps only get 256 KB of resource storage](https://developer.pebble.com/guides/app-resources/), so building the emulator into the firmware gave us unrestricted access to the watch’s flash storage for storing ROMs (necessary for large ROMs such as Pokemon Red which has a size of 1 MB)
-* We wanted to connect an NES controller to the emulator via the Pebble Time’s smartstrap port, and, at the time, the [smartstrap APIs](https://developer.pebble.com/guides/smartstraps/talking-to-smartstraps/) had not yet been released in the public Pebble SDK
+* [Pebble SDK apps only get 256 KB of resource storage](https://developer.rebble.io/developer.pebble.com/guides/app-resources/index.html), so building the emulator into the firmware gave us unrestricted access to the watch’s flash storage for storing ROMs (necessary for large ROMs such as Pokemon Red which has a size of 1 MB)
+* We wanted to connect an NES controller to the emulator via the Pebble Time’s smartstrap port, and, at the time, the [smartstrap APIs](https://developer.rebble.io/developer.pebble.com/guides/smartstraps/talking-to-smartstraps/index.html) had not yet been released in the public Pebble SDK
 
 Before we added smartstrap support for the NES controller, we used the following button control scheme for testing the emulator:
 
