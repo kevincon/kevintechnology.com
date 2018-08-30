@@ -14,7 +14,7 @@ redirect_from:
 
 I about tore my hair out on this one.
 
-The guys who make the Angstrom distribution of Linux have a script called `mkcard.txt` ([http://downloads.angstrom-distribution.org/demo/beagleboard/](http://downloads.angstrom-distribution.org/demo/beagleboard/)) which has traditionally worked for me to format an SD card properly for the Beagleboard family of single-board computers.
+The guys who make the Angstrom distribution of Linux have a script called `mkcard.txt` ([https://angstrom.s3.amazonaws.com/demo/beagleboard/index.html](https://angstrom.s3.amazonaws.com/demo/beagleboard/index.html)) which has traditionally worked for me to format an SD card properly for the Beagleboard family of single-board computers.
 
 But for some reason whenever I would run it in the last month or so on either Ubuntu 10.04 or Ubuntu 12.04, I would receive the following error and the card would not be properly formatted:
 
