@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Previously I worked on graphics, UI, and application firmware for the
   [Intel Vaunt smart glasses](https://www.theverge.com/2018/2/5/16966530/intel-vaunt-smart-glasses-announced-ar-video)
   and several smart watches at [Pebble](https://www.pebble.com/).
-copyright: © 2018 Kevin Conley
+copyright: © 2020 Kevin Conley
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kevintechnology.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: kevincon
