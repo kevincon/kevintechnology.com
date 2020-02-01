@@ -22,7 +22,7 @@ First, a little background on the panels. The printed circuit boards were purcha
 
 _Back of one of the panels._
 
-The LEDs were not included with the Modern Device kit, so we purchased some [really nice, ultra-bright LEDs from Mouser](http://www.mouser.com/ProductDetail/Lumex/SSL-LX5093SRD-D/?qs=S5aV3aBO9PfwQ8Rax%252b9lMw%3d%3d).
+The LEDs were not included with the Modern Device kit, so we purchased some really nice, ultra-bright LEDs from Mouser.
 
 Along with the 8x8 LED panel kit, we chose to order what Modern Device calls a “Bare Bones Board”, which is really just a small, custom Arduino board. It’s programmed using the [Arduino IDE](http://arduino.cc/en/Main/Software), choosing the “Arduino NG or older w/ ATmega168" option for the board type.
 
