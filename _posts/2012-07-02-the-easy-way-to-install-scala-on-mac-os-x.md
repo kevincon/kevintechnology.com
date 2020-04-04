@@ -28,6 +28,6 @@ Follow the instructions and enter your system password when prompted. Once Homeb
 brew install scala
 ```
 
-Homebrew will install Scala in `/usr/local`, which is important for a [number of reasons](http://hivelogic.com/articles/using_usr_local/), and it also puts the man pages for the Scala tools in the appropriate place.
+Homebrew will install Scala in `/usr/local`, and it also puts the man pages for the Scala tools in the appropriate place.
 
 If your next step is to learn Scala, I’m finding “Programming in Scala” to be very helpful. It was written by the creator of Scala, Martin Odersky, and the first edition is free online at [https://www.artima.com/pins1ed/](https://www.artima.com/pins1ed/).
