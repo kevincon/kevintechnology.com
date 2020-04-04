@@ -33,7 +33,7 @@ group :test do
 end
 
 group :development do
-  gem 'rake', '~> 11.2', '>= 11.2.2'
+  gem 'rake', '~> 12.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
