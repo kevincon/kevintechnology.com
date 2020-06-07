@@ -32,6 +32,7 @@ task :test => [:build] do
   typhoeus_configuration = {
     :connecttimeout => 300,
     :timeout => 300,
+    :ssl_verifypeer => false,
   }
   options = {
     :allow_hash_href => true,
