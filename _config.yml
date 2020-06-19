@@ -18,9 +18,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   My name is Kevin Conley, and I am a versatile software engineer
   who loves improving developer productivity and infrastructure. \\
    \\
+  I currently work on validating firmware for SSDs at [Intel](https://www.intel.com/content/www/us/en/products/memory-storage/solid-state-drives.html). \\
+   \\
   Previously I worked on graphics, UI, and application firmware for the
   [Intel Vaunt smart glasses](https://www.theverge.com/2018/2/5/16966530/intel-vaunt-smart-glasses-announced-ar-video)
-  and several smart watches at [Pebble](https://www.pebble.com/).
+  and several smart watches at [Pebble](https://en.wikipedia.org/wiki/Pebble_(watch)).
 copyright: © 2020 Kevin Conley
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kevintechnology.com" # the base hostname & protocol for your site, e.g. http://example.com
