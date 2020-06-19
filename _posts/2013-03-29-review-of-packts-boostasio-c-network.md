@@ -18,7 +18,7 @@ I was asked to review an eBook based on a [blog post I wrote a while back on raw
 
 **Summary**
 
-John Torjo's [Boost.Asio C++ Network Programming](https://www.packtpub.com/application-development/boostasio-c-network-programming) ($34.99 print, $18.69 eBook from Packt Publishing) serves two purposes. First, it’s a great overview of the capabilities of the Asio/Boost.Asio C++ networking libraries. Second, it is a good companion/guide for geting started with Boost.Asio.
+John Torjo's Boost.Asio C++ Network Programming ($34.99 print, $18.69 eBook from Packt Publishing) serves two purposes. First, it’s a great overview of the capabilities of the Asio/Boost.Asio C++ networking libraries. Second, it is a good companion/guide for geting started with Boost.Asio.
 
 **Content**
 
