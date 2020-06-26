@@ -26,7 +26,7 @@ She only gave me one rule to follow:
 
 For reasons that will become apparent later in the story, it is important to mention that I often teased Kacha that I might just propose with a pizza box if I could not think of anything better. [This form of proposal actually seems to be fairly common](https://www.womangettingmarried.com/pizza-marriage-proposals/), so no offense to others who proposed that way, but I was just joking because I knew I could think of something that Kacha would enjoy more.
 
-Inspiration struck a few months ago when I won a Windows Mixed Reality ([read: virtual reality](https://www.theverge.com/2017/9/1/16232704/microsoft-windows-mixed-reality-headsets-controllers)) headset at a [hackathon](https://www.creatingrealityhack.com/):
+Inspiration struck a few months ago when I won a Windows Mixed Reality ([read: virtual reality](https://www.theverge.com/2017/9/1/16232704/microsoft-windows-mixed-reality-headsets-controllers)) headset at a hackathon:
 
 {% oembed https://twitter.com/nltmcd/status/974436690453516288 %}
 
