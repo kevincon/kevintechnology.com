@@ -26,10 +26,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 copyright: © 2020 Kevin Conley
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kevintechnology.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: kevincon
-twitter_username: kevindcon
 author:
+  name: Kevin Conley
+  email: mail@kevintechnology.com
   social:
+    twitter: kevindcon
+    github: kevincon
     linkedin: kevincon
     email: mailto:mail@kevintechnology.com
 google_analytics: UA-17601169-1
