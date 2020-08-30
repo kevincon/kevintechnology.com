@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How I Used Virtual Reality to Propose to my Girlfriend
-description: 'Spoiler: she said yes!'
 hide_description: true
 image: /assets/proposal/preview.png
 date: '2018-05-03T11:15:26-07:00'
@@ -12,7 +11,7 @@ tags:
 - proposal
 ---
 
-![Picture of Kacha wearing a VR headset]({{ "/assets/proposal/preview.png" | absolute_url }})
+Spoiler: she said yes!
 
 My girlfriend Kacha and I have been dating for over four years. We have talked frequently about getting married, and Kacha had given me a few ideas about what she wanted in a proposal:
 
