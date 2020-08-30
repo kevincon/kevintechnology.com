@@ -41,8 +41,11 @@ paginate_path: '/page-:num/'
 accent_color: '#137ed9'
 accent_image: none
 hydejack:
+  post_addons: [related, comments]
+  no_large_headings: true
+  no_navbar: true
+  no_search: true
   no_push_state: true
-  no_google_fonts: true
   no_mark_external: true
 defaults:
   - scope:
