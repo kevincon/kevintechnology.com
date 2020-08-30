@@ -9,7 +9,7 @@ redirect_from:
 - /post/1657921855/korea-day-one
 ---
 
-This post is part of a series of journals I wrote while traveling to Seoul, South Korea to compete in the 2010 World Embedded Software Contest, [for which my team's project won the grand prize](http://www.seas.upenn.edu/media/feature-autoplug.php).
+This post is part of a series of journals I wrote while traveling to Seoul, South Korea to compete in the 2010 World Embedded Software Contest, for which my team's project won the grand prize.
 {:.message}
 
 We took the last train from 30th St. station to Trenton at 12:01 AM. We got to the Newark Airport around 2 AM, and then we waited around until they opened the security checkpoint around 3:30 AM. We were lucky that they didn’t give us any trouble about the electronic components we were carrying for [AutoPlug](https://www.youtube.com/watch?v=1YGamFKYLnA) (our demonstration unit consists of a Tupperware box with a battery pack and several circuits inside, and there’s an antenna sticking out of the top, so yeah it pretty much looks like a bomb). Anyway, we have a letter from our professor on Penn letterhead explaining what we were carrying and what it was for. Newark’s airport is pretty nice, but I wasn’t too happy with their lack of electrical outlets. There seemed to be just one “charging station” (sponsored by Samsung!) for our area in the airport. I was surprised to see that the flight from Newark to San Francisco had TVs with DirectTV on the back of every seat. But it made you pay $6 if you watched past the “trial time” of like 15 minutes.

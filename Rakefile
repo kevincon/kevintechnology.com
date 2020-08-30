@@ -51,7 +51,7 @@ task :test => [:build] do
       # These hrefs are used for jquery magic on uwave "how it works" page
       '#7seg', '#arduino', '#client', '#materials', '#microwave', '#server', '#videos',
       # This href is used by the js for the navigation drawer
-      '#_navigation',
+      '#_drawer--opened',
     ],
   }
   begin

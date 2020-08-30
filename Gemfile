@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.7.4"
+gem "jekyll", "~> 3.9.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.0"
@@ -29,7 +29,7 @@ group :jekyll_plugins do
 end
 
 group :test do
-  gem 'html-proofer', '~> 3.15'
+  gem 'html-proofer', '3.15.0'
 end
 
 group :development do
@@ -41,3 +41,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+
+# As of jekyll 3.9.0, kramdown v2 is used which distributes some features as separate gems
+# See https://jekyllrb.com/news/2020/08/05/jekyll-3-9-0-released/
+gem "kramdown-parser-gfm", "~> 1.1.0"
