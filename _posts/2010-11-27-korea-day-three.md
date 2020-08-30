@@ -10,7 +10,7 @@ redirect_from:
 - /post/1705447331/korea-day-three
 ---
 
-This post is part of a series of journals I wrote while traveling to Seoul, South Korea to compete in the 2010 World Embedded Software Contest, [for which my team's project won the grand prize](http://www.seas.upenn.edu/media/feature-autoplug.php).
+This post is part of a series of journals I wrote while traveling to Seoul, South Korea to compete in the 2010 World Embedded Software Contest, for which my team's project won the grand prize.
 {:.message}
 
 We didn’t have time to eat breakfast before we left for the competition venue on the shuttle bus. When we got to the Business Tower we went to go check on our booth. We decided to reorganize things a little by pushing our two tables back towards the back of the booth. Kai complimented us on the organization of our booth; she said it was much neater than the other teams. Kristen came by to wish us luck, but we think she got the translation wrong because she kept telling us to “cheer up!”
