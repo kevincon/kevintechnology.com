@@ -43,8 +43,6 @@ accent_image: none
 hydejack:
   post_addons: [related, comments]
   no_large_headings: true
-  no_navbar: true
-  no_search: true
   no_push_state: true
   no_mark_external: true
 defaults:
