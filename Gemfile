@@ -45,3 +45,6 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 # As of jekyll 3.9.0, kramdown v2 is used which distributes some features as separate gems
 # See https://jekyllrb.com/news/2020/08/05/jekyll-3-9-0-released/
 gem "kramdown-parser-gfm", "~> 1.1.0"
+gem "kramdown-math-katex", "~> 1.0.1"
+# For a JS runtime for KaTeX
+gem "therubyracer", "~> 0.12.3"
