@@ -24,7 +24,7 @@ _Back of one of the panels._
 
 The LEDs were not included with the Modern Device kit, so we purchased some really nice, ultra-bright LEDs from Mouser.
 
-Along with the 8x8 LED panel kit, we chose to order what Modern Device calls a “Bare Bones Board”, which is really just a small, custom Arduino board. It’s programmed using the [Arduino IDE](http://arduino.cc/en/Main/Software), choosing the “Arduino NG or older w/ ATmega168" option for the board type.
+Along with the 8x8 LED panel kit, we chose to order what Modern Device calls a “Bare Bones Board”, which is really just a small, custom Arduino board. It’s programmed using the [Arduino IDE](https://www.arduino.cc/en/software), choosing the “Arduino NG or older w/ ATmega168" option for the board type.
 
 ![Picture of Arduino "Bare Bones Board" attached to one of the panels]({{ "/assets/arduino-bbb.jpg" | absolute_url }})
 
