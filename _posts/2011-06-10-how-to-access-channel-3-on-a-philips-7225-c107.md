@@ -21,7 +21,7 @@ First, a little back story:  I’m staying at an extended stay hotel in Mountai
 
 One slightly more annoying problem is that the room’s TV only has a coaxial cable/antenna input. No composite video. No S-video. Nothing else. I brought my Nintendo 64 with me hoping to play it on the TV, but first I would need to purchase a Nintendo 64 RF switch, which lets you connect a Nintendo 64 to older TVs through the coaxial cable/antenna input.
 
-I purchased the [Innovation INNOV6917 Gamecube/Nintendo 64 RF Switch](http://www.tigerdirect.com/applications/searchtools/item-details.asp?EdpNo=4456128) from Tiger Direct.  It actually looks quite a bit different than the picture on Tiger Direct; there’s no “ANT IN” port, there’s no Channel switcher (it’s hard-coded to channel 3), and the enclosure is a black rectangular prism.
+I purchased the Innovation INNOV6917 Gamecube/Nintendo 64 RF Switch from Tiger Direct.  It actually looks quite a bit different than the picture on Tiger Direct; there’s no “ANT IN” port, there’s no Channel switcher (it’s hard-coded to channel 3), and the enclosure is a black rectangular prism.
 
 ![Picture of Innovation RF switch]({{ "/assets/innovation-rf-switch.jpg" | absolute_url }})
 
