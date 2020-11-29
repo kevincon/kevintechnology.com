@@ -1,0 +1,33 @@
+name: Continuous Deployment
+on:
+  push:
+    branches: [ $default-branch ]
+jobs:
+  build_and_test_and_deploy:
+    name: Build, Test, and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.1
+          # Note this line takes care of installing our dependencies
+          bundler-cache: true
+      - name: Build and Test
+        run: bundle exec rake test
+      - name: Check GitHub Pages Status
+        uses: crazy-max/ghaction-github-status@v2
+        with:
+          pages_threshold: partial_outage
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          build_dir: _site
+          fqdn: kevintechnology.com
+          keep_history: true
+          repo: kevincon/kevincon.github.io
+          target_branch: master
+        env:
+          GH_PAT: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
