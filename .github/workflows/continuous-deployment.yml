@@ -1,7 +1,7 @@
 name: Continuous Deployment
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ master ]
 jobs:
   build_and_test_and_deploy:
     name: Build, Test, and Deploy
@@ -27,6 +27,7 @@ jobs:
           build_dir: _site
           fqdn: kevintechnology.com
           keep_history: true
+          jekyll: false
           repo: kevincon/kevincon.github.io
           target_branch: master
         env:
