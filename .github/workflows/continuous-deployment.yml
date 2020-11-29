@@ -27,6 +27,7 @@ jobs:
           build_dir: _site
           fqdn: kevintechnology.com
           keep_history: true
+          jekyll: false
           repo: kevincon/kevincon.github.io
           target_branch: master
         env:
