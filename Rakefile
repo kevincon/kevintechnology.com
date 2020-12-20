@@ -47,7 +47,7 @@ task :test => [:build] do
     :typhoeus => typhoeus_configuration,
     :url_ignore => [
       # These domains block htmlproofer
-      /linkedin.com/, /blogspot.com/,
+      /linkedin.com/, /blogspot.com/, /twitter.com/, /t.co/,
       # These hrefs are used for jquery magic on uwave "how it works" page
       '#7seg', '#arduino', '#client', '#materials', '#microwave', '#server', '#videos',
       # This href is used by the js for the navigation drawer
