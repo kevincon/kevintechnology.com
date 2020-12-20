@@ -16,3 +16,9 @@ RUN if [ "${INSTALL_NODE}" = "true" ]; then su vscode -c "umask 0002 && . /usr/l
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
+
+# Customize rvm behavior
+# Automatically install rubies when cd'ing to a project directory
+RUN echo rvm_install_on_use_flag=1 >> /etc/rvmrc
+# Use files in the project to determine ruby version and gemset
+RUN echo rvm_project_rvmrc_default=1 >> /etc/rvmrc
