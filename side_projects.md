@@ -12,7 +12,7 @@ permalink: /side-projects/
 
 A Meteor-based voice assistant web application for cooking with recipes.
 
-[Website](https://tararecipes.herokuapp.com/) &#124; [Github](https://github.com/kevincon/tara)
+[Github](https://github.com/kevincon/tara)
 
 * * *
 
