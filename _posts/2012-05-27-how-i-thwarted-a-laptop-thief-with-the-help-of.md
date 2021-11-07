@@ -29,7 +29,7 @@ My brother never got a chance to turn on his laptop before it was stolen in Mont
 
 I went to Vidéotron’s website and found a form to submit an incident of Internet abuse (seemed somewhat related). I submitted a description of the laptop and the IP address and asked them what I should do. They responded:
 
-> Due to our country regulation, we are not authorized to give out information about our customers. You will have to contact the RCMP (canadian police) or the international police of your country so they contact the RCMP ([http://www.rcmp.gc.ca/](http://www.rcmp.gc.ca/)). Upon receipt of a proper warrant, we will give these information to the police.
+> Due to our country regulation, we are not authorized to give out information about our customers. You will have to contact the RCMP (canadian police) or the international police of your country so they contact the RCMP. Upon receipt of a proper warrant, we will give these information to the police.
 
 So next my father (the official owner of the laptop) and I emailed the Royal Canadian Mounted Police (RCMP) and explained the situation. We provided the model and serial numbers of the laptop and a screenshot from the McAfee info page where I first found the IP address.
 
