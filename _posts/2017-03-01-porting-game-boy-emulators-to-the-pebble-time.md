@@ -52,7 +52,7 @@ Here are some pictures of Pokemon Red running on the Pebble Time:
 
 ## Version Two: SDK App
 
-In August 2015 I worked with [Heiko Behrens](https://heikobehrens.net/) on another version of the Pebble Game Boy emulator. We ported an emulator called [PlutoBoy](https://github.com/RossMeikleham/PlutoBoy) using the public Pebble SDK so it could be side-loaded as a regular Pebble app. This was a fun challenge because:
+In August 2015 I worked with [Heiko Behrens](https://heikobehrens.com/) on another version of the Pebble Game Boy emulator. We ported an emulator called [PlutoBoy](https://github.com/RossMeikleham/PlutoBoy) using the public Pebble SDK so it could be side-loaded as a regular Pebble app. This was a fun challenge because:
 
 1. SDK apps have access to far less RAM than a built-in firmware app
 2. SDK apps only receive 256 KB of resource storage for ROMs (so unfortunately Pokemon is not an option)
