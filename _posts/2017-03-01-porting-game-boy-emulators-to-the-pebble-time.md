@@ -85,7 +85,7 @@ I enjoyed working on these projects with my coworkers because I grew up playing 
 * [RealBoy emulator blog posts](https://realboyemulator.wordpress.com/)
 * [GameBoy Emulator in JavaScript article series](http://imrannazar.com/GameBoy-Emulation-in-JavaScript:-The-CPU)
 * [List of Game Boy cartridges and what memory bank controller they use](http://www.devrs.com/gb/files/gbmbcsiz.txt)
-* [Everything You Always Wanted To Know About GAMEBOY but were afraid to ask](http://www.emulatronia.com/doctec/consolas/gameboy/Gmb-spec.txt)
+* [Everything You Always Wanted To Know About GAMEBOY but were afraid to ask](https://web.archive.org/web/20210606105755/http://www.emulatronia.com/doctec/consolas/gameboy/Gmb-spec.txt)
 
 * * *
 
