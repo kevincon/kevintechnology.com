@@ -91,7 +91,7 @@ Awards:
 
 A microwave hacked to play YouTube videos, completed in under 40 hours.
 
-Teammates:  [Varun Sampath](http://vsampath.com), [Ben Shyong](http://www.benjaminshyong.com/), [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
+Teammates:  [Varun Sampath](http://vsampath.com), [Ben Shyong](https://www.benshyong.com/), [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
 Awards:
 
@@ -154,7 +154,7 @@ Teammate: [Evan Benshetler](http://www.linkedin.com/pub/evan-benshetler/17/930/
 
 A Rails-based real-time visualization of SEPTA’s regional rail trains, completed in under 40 hours.
 
-Teammates: [Varun Sampath](http://vsampath.com), [Ben Shyong](http://www.benjaminshyong.com/), [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
+Teammates: [Varun Sampath](http://vsampath.com), [Ben Shyong](https://www.benshyong.com/), [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
 Awards:
 
