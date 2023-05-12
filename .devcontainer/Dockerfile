@@ -22,3 +22,6 @@ RUN if [ "${INSTALL_NODE}" = "true" ]; then su vscode -c "umask 0002 && . /usr/l
 RUN echo rvm_install_on_use_flag=1 >> /etc/rvmrc
 # Use files in the project to determine ruby version and gemset
 RUN echo rvm_project_rvmrc_default=1 >> /etc/rvmrc
+
+# Create symlink for mkdir absolute path used by stupid eventmachine gem build
+RUN ln -s /bin/mkdir /usr/bin/mkdir
