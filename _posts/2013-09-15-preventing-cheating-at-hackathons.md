@@ -78,7 +78,7 @@ The motivation I pointed to for this discussion about cheating is how the growin
 
 But what if those types of prizes didn’t exist? What if the reward for building the best hack was just a title or a trophy?
 
-The formation of a [Major League Hacking organization](https://mlh.io/) for colleges was announced this past week at PennApps, and I really like how they plan on operating. Student participants at select college hackathons across the country can win points for their school by the merit of their hacks, and the school with the most points at the end of the season earns this kickass trophy:
+The formation of a Major League Hacking organization for colleges was announced this past week at PennApps, and I really like how they plan on operating. Student participants at select college hackathons across the country can win points for their school by the merit of their hacks, and the school with the most points at the end of the season earns this kickass trophy:
 
 ![Picture of MLH trophy](https://news.mlh.io/wp-content/uploads/2014/07/mlh-trophy-f2013-a1dc212d1e20338cd1f6436e6e7a886a.jpg)
 
