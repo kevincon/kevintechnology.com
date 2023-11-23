@@ -30,8 +30,8 @@ desc "Perform all testing on the built HTML"
 task :test => [:build] do
   puts 'Testing site...'.bold
   typhoeus_configuration = {
-    :connecttimeout => 300,
-    :timeout => 300,
+    :connecttimeout => 1000,
+    :timeout => 1000,
     :ssl_verifypeer => false,
   }
   options = {
