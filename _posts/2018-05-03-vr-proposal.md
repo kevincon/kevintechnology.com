@@ -41,7 +41,7 @@ Then, on April 15, 2018, I asked Kacha if she wanted to try a new VR game I foun
 
 {% video /assets/proposal/looking-around.mp4 %}
 
-In VR, Kacha found herself in an [auditorium](https://www.turbosquid.com/3d-models/3d-concert-hall-chairs-model/991147). On the stage, an orchestra started to play one of Kacha's favorite orchestral pieces: the first movement of [Scheherazade by Rimsky-Korsakov](https://en.wikipedia.org/wiki/Scheherazade_%28Rimsky-Korsakov%29). Actually it was just [this Creative Commons video recording of the Kaohsiung American School orchestra playing](https://youtu.be/xszIc_NYalo?t=3m40s) because I did not feel confident animating an entire orchestra in 3D.
+In VR, Kacha found herself in an auditorium. On the stage, an orchestra started to play one of Kacha's favorite orchestral pieces: the first movement of [Scheherazade by Rimsky-Korsakov](https://en.wikipedia.org/wiki/Scheherazade_%28Rimsky-Korsakov%29). Actually it was just [this Creative Commons video recording of the Kaohsiung American School orchestra playing](https://youtu.be/xszIc_NYalo?t=3m40s) because I did not feel confident animating an entire orchestra in 3D.
 
 {% video /assets/proposal/orchestra.mp4 %}
 
