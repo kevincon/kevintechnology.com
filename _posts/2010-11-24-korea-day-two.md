@@ -12,7 +12,7 @@ redirect_from:
 This post is part of a series of journals I wrote while traveling to Seoul, South Korea to compete in the 2010 World Embedded Software Contest, for which my team's project won the grand prize.
 {:.message}
 
-We woke up early and went to the hotel’s restaurant, called Naru, to eat breakfast. It was a buffet and I was glad to see some eggs, bacon, and sausage after the fried chicken events of the night before. After breakfast we got all of our AutoPlug supplies together and went to the lobby to wait for our shuttle. There we noticed a few other International teams. We introduced ourselves to a group of students from Germany and Finland. Their project was a radio-controlled hovercraft! So cool! It looked inexpensive to make too: just Styrofoam, duct tape, CPU fans, and microcontrollers. We also spoke with a woman from Australia, Jenny, who happened to be representing the Serval project I had read about online at [www.servalproject.org](http://www.servalproject.org/). Their project is very cool, it is a peer-to-peer network for cell phones that replaces the need for cell towers.
+We woke up early and went to the hotel’s restaurant, called Naru, to eat breakfast. It was a buffet and I was glad to see some eggs, bacon, and sausage after the fried chicken events of the night before. After breakfast we got all of our AutoPlug supplies together and went to the lobby to wait for our shuttle. There we noticed a few other International teams. We introduced ourselves to a group of students from Germany and Finland. Their project was a radio-controlled hovercraft! So cool! It looked inexpensive to make too: just Styrofoam, duct tape, CPU fans, and microcontrollers. We also spoke with a woman from Australia, Jenny, who happened to be representing the Serval project I had read about online. Their project is very cool, it is a peer-to-peer network for cell phones that replaces the need for cell towers.
 
 ![Picture of outside of hotel]({{ "/assets/korea-outside-hotel-picture.jpg" | absolute_url }})
 
@@ -36,7 +36,7 @@ There are 8 international teams total, from 12 countries. We are the only Americ
 
 1. AutoPlug – University of Pennsylvania (our project)
 
-2. Serval – INSA De Lyon ([www.servalproject.org](http://www.servalproject.org/) concept of a peer-to-peer network of cell phones called “bat phones” to eliminate the need for cell towers)
+2. Serval – INSA De Lyon (concept of a peer-to-peer network of cell phones called “bat phones” to eliminate the need for cell towers)
 
 3. Hoveralls – Metropolia Finland (low-cost radio controlled hovercraft)
 

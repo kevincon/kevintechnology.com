@@ -28,7 +28,7 @@ The idea of cheating at hackathons isn’t new, and [others](https://news.ycombi
 
 I’ll concede that talking about cheating at hackathons isn’t much fun. Despite the competitive atmosphere, my favorite aspect of hackathons is the sense of community I feel there when participants share their passion for tech and help each other learn how to use new programming languages and technologies.
 
-Nevertheless, the stakes are becoming too high to ignore the notion of cheating at hackathons. This past weekend at the [PennApps](https://web.archive.org/web/20140330215345/http://2013f.pennapps.com/) hackathon at the University of Pennsylvania, hackathon participants competed for over $27,000 in prizes. The [MHacks](http://mhacks.org/) hackathon at the University of Michigan, to be held next weekend, is offering over $30,000 in prizes.
+Nevertheless, the stakes are becoming too high to ignore the notion of cheating at hackathons. This past weekend at the [PennApps](https://web.archive.org/web/20140330215345/http://2013f.pennapps.com/) hackathon at the University of Pennsylvania, hackathon participants competed for over $27,000 in prizes. The [MHacks](https://web.archive.org/web/20130917004234/http://mhacks.org/) hackathon at the University of Michigan, to be held next weekend, is offering over $30,000 in prizes.
 
 ### Types of Cheating
 
@@ -78,7 +78,7 @@ The motivation I pointed to for this discussion about cheating is how the growin
 
 But what if those types of prizes didn’t exist? What if the reward for building the best hack was just a title or a trophy?
 
-The formation of a [Major League Hacking organization](https://mlh.io/) for colleges was announced this past week at PennApps, and I really like how they plan on operating. Student participants at select college hackathons across the country can win points for their school by the merit of their hacks, and the school with the most points at the end of the season earns this kickass trophy:
+The formation of a Major League Hacking organization for colleges was announced this past week at PennApps, and I really like how they plan on operating. Student participants at select college hackathons across the country can win points for their school by the merit of their hacks, and the school with the most points at the end of the season earns this kickass trophy:
 
 ![Picture of MLH trophy](https://news.mlh.io/wp-content/uploads/2014/07/mlh-trophy-f2013-a1dc212d1e20338cd1f6436e6e7a886a.jpg)
 
