@@ -107,7 +107,7 @@ Awards:
 
 A crowd-sourced, text-message interface for Google’s Person Finder disaster victim database, completed in under 24 hours.
 
-Teammates: [Ted Lee](http://www.tedlee.me/) \+ many others, see [README](https://github.com/dbro/smspersonfinder/blob/master/README)
+Teammates: [Ted Lee](https://www.linkedin.com/in/tedleeprofile) \+ many others, see [README](https://github.com/dbro/smspersonfinder/blob/master/README)
 
 Awards:
 
