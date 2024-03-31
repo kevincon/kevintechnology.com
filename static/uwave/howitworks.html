@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>The Making of uWave</title>
+	<meta name="description" content="PennApps hack">
+	<meta name="author" content="Team WyeDelta">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	<!-- Styles -->
+	<link href="bootstrap-1.1.1.css" rel="stylesheet">
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		/////////// THE STORY //////////////
+		var storyContent = "";
+
+		//////////// MATERIALS /////////////
+		var materialsContent = "\
+												<dl>\
+												<dt>Microwave</dt>\
+												<dd>The microwave we used is the <a href='http://www.amazon.com/Westinghouse-WST3501-0-7-Microwave-Oven/dp/B000SEV9DK'>Westinghouse WST3501</a>.</dd>\
+												<dt>Arduino Microcontroller</dt>\
+												<dd>An external microcontroller analyzes the cook time selected by the user and communicates with a web server. We used the <a href='http://arduino.cc/en/Main/arduinoBoardDuemilanove'>Arduino Duemilanove</a>.</dd>\
+												<dt>Arduino Ethernet Shield</dt>\
+												<dd>The Arduino uses <a href='http://www.arduino.cc/en/Main/ArduinoEthernetShield'>this shield</a> to communicate with our web server over the Internet.</dd>\
+												<dt>Arduino Proto Shield</dt>\
+												<dd><a href='http://www.ladyada.net/make/pshield/'>This shield</a> has a breadboard that we used to make connections between the microwave, the LM348 op-amp, and the Arduino.</dd>\
+												<dt>LM348 Quad Op-Amp</dt>\
+												<dd>The <a href='http://www.national.com/mpf/LM/LM348.html'>LM348</a> is a chip containing 4 operational amplifiers.  We used all four op-amps as comparators to boost the signals coming from the microwave's 7-segment display.</dd>\
+												<dt>Wires</dt>\
+												<dd>For making connections between the Arduino, the LM348, and the microwave.</dd>\
+												<dt>A Server</dt>\
+												<dd>We used a <a href='http://www.linode.com/'>Linode VPS</a> for the server that the Arduino communicates with.</dd>\
+												<dt>Tablet</dt>\
+												<dd>We used the HP Touchpad, which was <a href='http://www.pcmag.com/article2/0,2817,2391460,00.asp'>recently offered for a generous discount</a>.</dd>\
+												<dt>Pizza</dt>\
+												<dd>We love Papa Johns.</dd>\
+												</dl>";
+		//////////// MICROWAVE /////////////
+		var microwaveContent = "The microwave we used is the <a href='http://www.amazon.com/Westinghouse-WST3501-0-7-Microwave-Oven/dp/B000SEV9DK'>Westinghouse WST3501</a>.  Food is cooked by pressing the TIME button, entering the cook time, and pressing the START button.<br><div align=center><img src='images/microwave_inside.jpg' width=360 height=480></div><br>We started modifying the microwave by opening it up to see what was inside.  None of us had ever opened a microwave before, and safety was a big concern. Of course it goes without saying that you should never open any electronic device while it's plugged in.  But moreover its important to make sure that none of the high voltage capacitors in the microwave have any voltage still stored.  Once we had the exterior case off, we started by measuring the voltage of the capacitors. If there was any extra voltage, we shorted the terminals of the capacitor to the ground of a power supply we had nearby.<br><div align=center><img src='images/microwave_pcb.jpg' width=480 height=360></div><br>We took several pictures of the microwave's connections from various angles to make sure that we had a reference for reassembling the microwave when we were done. We decided to access the microwave's cook time via the 7-segment display because we were unable to figure out the protocol for the keypad.  The microwave's 7-segment display has 12 pins which the Arduino needs to access from the outside.  We drilled a hole into the side of the microwave and soldered the necessary wires to the pins of the 7-segment display.<br><div align=center><img src='images/microwave_7seg.jpg' width=480 height=360></div><br><iframe title='uWave' width='800' height='600' scrolling='no' frameborder='0' name='uWave' class='eda_tool' src='https://upverter.com/eda/embed/#designId=95a4065cced64a01,actionId='></iframe><br>Then we reconnected the wires we had to disconnect to access the PCB and put the exterior case back on. Luckily, the microwave still turned on.<br><div align=center><img src='images/microwave_finished.jpg' width=480 height=360></div><br>";
+		//////////// 7-SEG /////////////////
+		var sevenSegContent = "7-segment displays are everywhere. Some examples include alarm clock displays, elevator floor indicators, oh and microwave cooking timers. The concept is elegant but simple: the display represents any alphanumeric character out of 7 LED segments, where different combinations of lit segments show different characters.<br><br>It can be tricky to determine how the display lights up those segments though. The simplest encoding would have a common ground and a pin for every single segment: simply connect the pin for the segment you want to supply voltage and it lights up. This doesn’t scale very well though, because pins are expensive and it would be hard to cram 28 pins for a 4 digit display in the 2 inch width of the display. Instead, manufacturers get creative and multiplex the pins. For the display in our microwave, there are 12 pins. Four of the pins are for cathodes, one for each digit in the display. Seven of the pins correspond to the seven segments. The last pin is for the colon . A controller can then only drive one digit at a time, because there are only 7 segment pins to manipulate. The trick then is to choose which digit to illuminate with the common cathode. If the controller cycles through the digits quickly enough, then our eyes will be fooled into thinking all of the digits are on at once. We determined the switching speed by watching the signal on one of the cathodes with an oscilloscope. Each digit is on for 4 milliseconds, giving a clock speed of 250Hz. Our 16MHz Arduino can interrupt on that like a champ with room to spare, so we were pleased.<br><br>Unfortunately, interrupting on those cathode pins wasn’t so straightforward. The oscilloscope told us that the potential difference as the cathode switches is 1.8V, which isn’t enough to switch an Arduino digital pin. We fix this up with perhaps an ugly solution. Using an LM348 quad op-amp, we built four comparator circuits, with 1.8V as the reference voltage and the Arduino supply voltage as the op-amp supply. This worked well, though, giving us a very pretty square wave. With the hardware signals now ready to capture, it was time to code.";
+		//////////// ARDUINO ///////////////
+		var arduinoContent = "The Arduino Duemilanove we used has a few jobs to handle. We showed earlier how we could decode the 7-segment display, but the Arduino actually has to do that job. It also has to send messages to the server. There are a few questions to ask about this latter job: what messages should be sent, when should they be sent, and how should they be sent? We’ll attempt to tackle all of these in this overview. You can follow along with the <a href='https://github.com/vsampath/uWave/blob/master/uWaveArduino/uWaveArduino.pde'>code on github</a>.<h3>Reading the 7-Segment Display</h3>We’ve discussed the design of the microwave’s 7-segment display before, and how we’ve had to account for the multiplexing of pins and the logic levels of the cathodes and anodes. Since the pins are multiplexed, we need to use interrupts so that we can read the segments (i.e. anodes) only when we know what digit is being displayed. There are a variety of ways to do this. We decided to use a single pin-change interrupt that activates whenever any of the cathode pins goes low. This way we can avoid the redundancy of a different interrupt service routine (ISR) for each pin that would be essentially doing the same job. Unfortunately the Arduino API does not expose pin-change interrupts, so we had to dig into AVR land. You can see the pin-change ISR in the PDE on github.<br><br>Now that we know what digit is being read, we need to read the digits. We discussed earlier how the logic levels of the anodes are not amicable for the Arduino digital pins. Instead of using comparators or some other circuit to raise the logic level, we took the lazy route and just used the analog pins. We determined the on/off threshold voltage and used that information along with some bitwise operators to store in a byte what segments were on or off (see the handle_digits_change() function). You, the astute reader, might have noticed though that there are 7 segments but only 6 analog pins on an Arduino. Through some staring, we realized that we actually only needed 6 segments to uniquely identify a digit. That was lucky!<br><br>The last task is to use the knowledge of what segments were on to figure out what digit was being displayed. We use a switch statement to decode the seven-segment digits, which is shown in the convert() function.<h3>Communicating with the Server</h3>The next task is to push messages to the server. We do this via HTTP GET requests to our server. To make those requests, we use the Ethernet API with the Arduino ethernet shield. This allows us to easily connect to our backend server and send HTTP requests. We decided that the best information to give was push notifications when the the food started cooking and when it was finished. We didn’t have access to the microwave buttons though, so we didn’t know whether the “Cook” or “Start” button had been pressed. We instead used the information the 7-segment display provided us. We know that cooking causes the display to decrement one second at a time; if it isn't, then the user either stopped the cooking or the display is in clock mode. The consequence of using this logic is that we have a 1 second latency in determining if food is being cooked. We lived with that and used a timer with a 1.5 second period to allow us to periodically read the time and check for a decrement. These checks transitioned the Arduino between COOKING and WAITING states, and depending on the state transition either the starting time for the cooking was pushed or the indication that the cooking is complete was pushed. Check out the tick() callback in the code to see this in action.<h3>Summary</h3>The Arduino reads the 7-segment display using AVR pin-change interrupts. It sends messages via an Arduino Ethernet Shield and HTTP GET requests. It determines when to send these messages by polling for conditions every 1.5 seconds using a timer interrupt.";
+		//////////// SERVER ////////////////
+		var serverContent = "The back-end is a <a href='http://rubyonrails.org'>Ruby on Rails</a> application running on a <a href='http://www.linode.com'>Linode VPS</a>.  The application uses a plugin called <a href='https://github.com/maccman/juggernaut'>Juggernaut</a> to push data to the Touchpad client, calling a Javascript function that fetches and plays a YouTube video specified by the server.  The <a href='http://www.twilio.com/'>Twilio</a> API is used to send SMS messages to the user’s mobile phone.<br><br>For the Juggernaut gem, the command Juggernaut.publish(channel, vid_id) pushes the id of the YouTube video to the client listener.  The client side code is javascript script based, and creates a Juggernaut object that listens to the publish commands from the server.  The relevant command is jug.subscribe(channel, function(data){ updatePlayer(data); });, where .jug. is an initialized Juggernaut object, and updatePlayer is a javascript function from the YouTube Javascript API that triggers loading of the correct video.  The local variable .data. is simply the YouTube id of the video we are calling.  It is important to note that three Javascript libraries, .json.js., .socket_io.js., and .juggernaut.js. are required for the client-side listener to function correctly.";
+		//////////// CLIENT ////////////////
+		var clientContent = "The UI is where the magic happens, so we knew we needed something slick to display YouTube videos. We didn.t really have time to build our own display, so we figured a tablet would do the job. For the sake of simplicity and portability, we developed a website instead of a native app.<br><div align=center><img src='images/client.png'></div><br>The UI is very simple.  Users can input their twitter handle and/or phone number if they would like to receive a tweet or text message when their food is done. When users start cooking food on the microwave, a YouTube video about the same length as the food's cook time starts playing here.";
+		//////////// VIDEOS ////////////////
+		var videosContent = "<iframe width='560' height='315' src='https://www.youtube.com/embed/1aDyDCBK828' frameborder='0' allowfullscreen></iframe>";
+
+		$(document).ready(function () {
+			$("#storyButton").click(function () {
+				$("#howContent").html(storyContent);
+				$("#storyTab").attr('class', 'active');
+				$("#materialsTab").attr('class', '');
+				$("#microwaveTab").attr('class', '');
+				$("#7segTab").attr('class', '');
+				$("#arduinoTab").attr('class', '');
+				$("#serverTab").attr('class', '');
+				$("#clientTab").attr('class', '');
+				$("#videosTab").attr('class', '');
+			});
+			$("#materialsButton").click(function () {
+				$("#howContent").html(materialsContent);
+				$("#storyTab").attr('class', '');
+				$("#materialsTab").attr('class', 'active');
+				$("#microwaveTab").attr('class', '');
+				$("#7segTab").attr('class', '');
+				$("#arduinoTab").attr('class', '');
+				$("#serverTab").attr('class', '');
+				$("#clientTab").attr('class', '');
+				$("#videosTab").attr('class', '');
+			});
+			$("#microwaveButton").click(function () {
+				$("#howContent").html(microwaveContent);
+				$("#storyTab").attr('class', '');
+				$("#materialsTab").attr('class', '');
+				$("#microwaveTab").attr('class', 'active');
+				$("#7segTab").attr('class', '');
+				$("#arduinoTab").attr('class', '');
+				$("#serverTab").attr('class', '');
+				$("#clientTab").attr('class', '');
+				$("#videosTab").attr('class', '');
+			});
+			$("#7segButton").click(function () {
+				$("#howContent").html(sevenSegContent);
+				$("#storyTab").attr('class', '');
+				$("#materialsTab").attr('class', '');
+				$("#microwaveTab").attr('class', '');
+				$("#7segTab").attr('class', 'active');
+				$("#arduinoTab").attr('class', '');
+				$("#serverTab").attr('class', '');
+				$("#clientTab").attr('class', '');
+				$("#videosTab").attr('class', '');
+			});
+			$("#arduinoButton").click(function () {
+				$("#howContent").html(arduinoContent);
+				$("#storyTab").attr('class', '');
+				$("#materialsTab").attr('class', '');
+				$("#microwaveTab").attr('class', '');
+				$("#7segTab").attr('class', '');
+				$("#arduinoTab").attr('class', 'active');
+				$("#serverTab").attr('class', '');
+				$("#clientTab").attr('class', '');
+				$("#videosTab").attr('class', '');
+			});
+			$("#serverButton").click(function () {
+				$("#howContent").html(serverContent);
+				$("#storyTab").attr('class', '');
+				$("#materialsTab").attr('class', '');
+				$("#microwaveTab").attr('class', '');
+				$("#7segTab").attr('class', '');
+				$("#arduinoTab").attr('class', '');
+				$("#serverTab").attr('class', 'active');
+				$("#clientTab").attr('class', '');
+				$("#videosTab").attr('class', '');
+			});
+			$("#clientButton").click(function () {
+				$("#howContent").html(clientContent);
+				$("#storyTab").attr('class', '');
+				$("#materialsTab").attr('class', '');
+				$("#microwaveTab").attr('class', '');
+				$("#7segTab").attr('class', '');
+				$("#arduinoTab").attr('class', '');
+				$("#serverTab").attr('class', '');
+				$("#clientTab").attr('class', 'active');
+				$("#videosTab").attr('class', '');
+			});
+			$("#videosButton").click(function () {
+				$("#howContent").html(videosContent);
+				$("#storyTab").attr('class', '');
+				$("#materialsTab").attr('class', '');
+				$("#microwaveTab").attr('class', '');
+				$("#7segTab").attr('class', '');
+				$("#arduinoTab").attr('class', '');
+				$("#serverTab").attr('class', '');
+				$("#clientTab").attr('class', '');
+				$("#videosTab").attr('class', 'active');
+			});
+		});
+	</script>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-25782383-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type =
+				'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+				'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-- Main hero unit for a primary marketing message or call to action -->
+		<div class="hero-unit">
+			<h1>The Making of
+				<a href="index.html">µWave</a>
+			</h1>
+			<br>
+			<ul class="tabs">
+				<li id="materialsTab">
+					<a id="materialsButton">Materials</a>
+				</li>
+				<li id="microwaveTab">
+					<a id="microwaveButton">Microwave</a>
+				</li>
+				<li id="7segTab">
+					<a id="7segButton">7-Segment Display</a>
+				</li>
+				<li id="arduinoTab">
+					<a id="arduinoButton">Arduino</a>
+				</li>
+				<li id="serverTab">
+					<a id="serverButton">Server</a>
+				</li>
+				<li id="clientTab">
+					<a id="clientButton">Client</a>
+				</li>
+				<li id="videosTab">
+					<a id="videosButton">Videos</a>
+				</li>
+			</ul>
+			<div id="howContent">
+				<p>Click on the tabs above to learn about how we made uWave.</p>
+				<p>Contact us at
+					<a href="mailto:uwaved@gmail.com">uwaved@gmail.com</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<center>
+				<p>Conceived by
+					<a target="new" href="https://www.twitter.com/wfwhitney">Will Whitney</a> | Built in under 40 hours
+					by
+					<a target="new" href="https://kevintechnology.com">Kevin Conley</a>,
+					<a target="new" href="https://www.benshyong.com/">Ben Shyong</a>,
+					<a target="new" href="http://vsampath.com">Varun Sampath</a>,
+					<a target="new" href="https://www.linkedin.com/in/ted-zhang-a854b129/">Teddy Zhang</a> for
+					<a target="new"
+						href="https://web.archive.org/web/20140612074401/http://2011f.pennapps.com/blog/2011/9/18/congratulations-to-the-winners.html">PennApps</a>.
+			</center>
+		</footer>
+	</div>
+	<!-- /container -->
+</body>
+
+</html>
