@@ -1,0 +1,10 @@
+DirectoryPath: public
+IgnoreURLs:
+  # These domains block htmltest
+  - "blogspot.com"
+  - "linkedin.com"
+  - "soundcloud.com"
+  - "t.co"
+  - "twitter.com"
+CheckMeta: false
+ExternalTimeout: 60

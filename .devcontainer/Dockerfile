@@ -1,27 +1,32 @@
-# [Choice] Ruby version: 2, 2.7, 2.6, 2.5
-ARG VARIANT=2
-FROM mcr.microsoft.com/vscode/devcontainers/ruby:${VARIANT}
+ARG NODE_VERSION=16
+FROM mcr.microsoft.com/devcontainers/javascript-node:${NODE_VERSION}-bookworm
 
-# [Option] Install Node.js
-ARG INSTALL_NODE="true"
-ARG NODE_VERSION="lts/*"
-RUN if [ "${INSTALL_NODE}" = "true" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
+# VARIANT can be either 'hugo' for the standard version or 'hugo_extended' for the extended version.
+ARG VARIANT=hugo
+# VERSION can be either 'latest' or a specific version number
+ARG VERSION=latest
 
-# [Optional] Uncomment this section to install additional OS packages.
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
+# Download Hugo
+RUN apt-get update && apt-get install -y ca-certificates openssl git curl && \
+    rm -rf /var/lib/apt/lists/* && \
+    case ${VERSION} in \
+    latest) \
+    export VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4)}') ;;\
+    esac && \
+    echo ${VERSION} && \
+    case $(uname -m) in \
+    aarch64) \
+    export ARCH=ARM64 ;; \
+    *) \
+    export ARCH=64bit ;; \
+    esac && \
+    echo ${ARCH} && \
+    wget -O ${VERSION}.tar.gz https://github.com/gohugoio/hugo/releases/download/v${VERSION}/${VARIANT}_${VERSION}_Linux-${ARCH}.tar.gz && \
+    tar xf ${VERSION}.tar.gz && \
+    mv hugo /usr/bin/hugo
 
-# [Optional] Uncomment this line to install additional gems.
-# RUN gem install <your-gem-names-here>
+# Hugo dev server port
+EXPOSE 1313
 
-# [Optional] Uncomment this line to install global node packages.
-# RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
-
-# Customize rvm behavior
-# Automatically install rubies when cd'ing to a project directory
-RUN echo rvm_install_on_use_flag=1 >> /etc/rvmrc
-# Use files in the project to determine ruby version and gemset
-RUN echo rvm_project_rvmrc_default=1 >> /etc/rvmrc
-
-# Create symlink for mkdir absolute path used by stupid eventmachine gem build
-RUN ln -s /bin/mkdir /usr/bin/mkdir
+# htmltest
+RUN curl https://htmltest.wjdp.uk | bash -s -- -b /usr/local/bin
