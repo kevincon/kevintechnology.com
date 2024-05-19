@@ -22,7 +22,7 @@ Here’s a conversation I’m sure you’ve experienced if you’ve ever been to
 
 ### Motivation to Discuss Cheating
 
-The idea of cheating at hackathons isn’t new, and [others](https://news.ycombinator.com/item?id=2240226) have written about suspected cheating at hackathons. Rob Spectre even (humorously) suggested that [cheating is the easiest way to win first place at a hackathon](https://github.com/RobSpectre/Talks/tree/master/How%20To%20Take%20Second%20Place%20at%20a%20Hackathon).
+The idea of cheating at hackathons isn’t new, and [others](https://news.ycombinator.com/item?id=2240226) have written about suspected cheating at hackathons. Rob Spectre even (humorously) suggested that [cheating is the easiest way to win first place at a hackathon](https://web.archive.org/web/20221206093646/https://github.com/RobSpectre/Talks/tree/master/How%20To%20Take%20Second%20Place%20at%20a%20Hackathon).
 
 I’ll concede that talking about cheating at hackathons isn’t much fun. Despite the competitive atmosphere, my favorite aspect of hackathons is the sense of community I feel there when participants share their passion for tech and help each other learn how to use new programming languages and technologies.
 
