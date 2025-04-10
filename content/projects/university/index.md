@@ -112,13 +112,21 @@ Awards:
 
 A crowd-sourced, text-message interface for Google’s Person Finder disaster victim database, completed in under 24 hours.
 
-Teammates: [Ted Lee](https://www.linkedin.com/in/tedleeprofile) \+ many others, see [README](https://github.com/dbro/smspersonfinder/blob/master/README)
+Teammates:
+* [Ted Lee](https://www.linkedin.com/in/tedleeprofile)
+* Lionel Young
+* Jonathan Koff
+* Anup Mantri
+* Dan Brown
+* Deepali Singla
+* Sian Liu
+* and a few others
 
 Awards:
 
 * First Place, Random Hacks of Kindness Silicon Valley Hackathon, June 2011
 
-{{< github repo="dbro/smspersonfinder" >}}
+[Google Blog Post](https://googleblog.blogspot.com/2011/06/thousands-of-hackers-for-good-build.html)
 
 * * *
 
