@@ -4,6 +4,7 @@ IgnoreURLs:
   - "blogspot.com"
   - "linkedin.com"
   - "soundcloud.com"
+  - "speakev.com"
   - "t.co"
   - "twitter.com"
 CheckMeta: false

@@ -2,7 +2,7 @@ A little about me:
 
 I've been lucky to have worked on the following projects:
 
-🚛 dev experience for [Stack AV](https://stackav.com/) autonomous truck software developers \
+🚛 dev experience for autonomous truck software developers at [Stack AV](https://stackav.com/) \
 💳 managed dev environments and tooling for
 [Square Point of Sale devices](https://en.wikipedia.org/wiki/Square_(financial_services)#Devices) \
 🤖 HIL test automation for
