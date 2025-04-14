@@ -69,3 +69,7 @@ weight = 10
 [services]
 [services.disqus]
 shortname = "kevintechnology"
+
+[module]
+[[module.imports]]
+path = 'images'
