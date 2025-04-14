@@ -67,7 +67,7 @@ To reduce the risk of any API-breaking changes, I'm just using the official Niss
 1. I created a GitHub repo containing a GitHub Action that:
     * uses [`apkeep`](https://github.com/EFForg/apkeep) to download the NissanConnect app
     * uses [Appium](https://appium.io/) to:
-        * install and launch  on an Android device connected to the host via the Android Debugger (ADB)
+        * install and launch the app on an Android device connected to the host via the Android Debugger (ADB)
         * automate tapping through the app's screen to sign into the app using provided account credentials
         * scrape and output the text of the vehicle's status after it refreshes
 {{< github repo="kevincon/nissan-connect-scraper" >}}
