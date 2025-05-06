@@ -1,10 +1,12 @@
 DirectoryPath: public
 IgnoreURLs:
   # These domains block htmltest
+  - "askubuntu.com"
   - "blogspot.com"
   - "linkedin.com"
   - "soundcloud.com"
   - "speakev.com"
+  - "stackoverflow.com"
   - "t.co"
   - "twitter.com"
 CheckMeta: false
