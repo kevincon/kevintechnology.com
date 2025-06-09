@@ -8,7 +8,7 @@ title: O' Circuit-Tree, O' Circuit-Tree
 url: 2010/12/13/o-circuit-tree-o-circuit-tree.html
 ---
 
-Every year around the holidays, my dorm, [Stouffer College House](http://stouffer.house.upenn.edu/), puts on a program called Holiday Hobbit. The name is just an attempt to make the program secular. It’s really just [Secret Santa](http://en.wikipedia.org/wiki/Secret_Santa) for Stouffer residents. The only rule is that you cannot spend more than $10 on the gift.
+Every year around the holidays, my dorm, [Stouffer College House](https://stouffer.house.upenn.edu/), puts on a program called Holiday Hobbit. The name is just an attempt to make the program secular. It’s really just [Secret Santa](http://en.wikipedia.org/wiki/Secret_Santa) for Stouffer residents. The only rule is that you cannot spend more than $10 on the gift.
 
 I decided to participate in the program this year. I was in the mood to do something creative, so I decided to make a Christmas decoration in the form of a table centerpiece. I also wanted to do something involving electronics, so I set out to create a miniature Christmas tree composed of LED lights and other assorted electronic component ‘ornaments.’ And I decided to call this project, The Circuit-Tree (read: circuitry…get it?).  Convinced that I wasn’t crazy by finding a [similar project](http://www.instructables.com/id/Mini-Christmas-Tree-With-Lights/) online, I decided to start by making the tree itself.
 

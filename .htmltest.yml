@@ -9,5 +9,6 @@ IgnoreURLs:
   - "stackoverflow.com"
   - "t.co"
   - "twitter.com"
+  - "ultimatebootcd.com"
 CheckMeta: false
 ExternalTimeout: 60
