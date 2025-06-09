@@ -30,3 +30,7 @@ EXPOSE 1313
 
 # htmltest
 RUN curl https://htmltest.wjdp.uk | bash -s -- -b /usr/local/bin
+
+# Install vim and set it as git editor for convenience
+RUN apt-get update && apt-get install --yes vim
+ENV GIT_EDITOR="vim"
