@@ -40,7 +40,7 @@
 		1313
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pre-commit install",
+	"postCreateCommand": "git submodule update --init --recursive && pre-commit install",
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node"
 }

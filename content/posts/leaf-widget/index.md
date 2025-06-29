@@ -24,7 +24,7 @@ The app is...fine. Here is one representative review from the [Apple App Store](
 
 ![On 10/11/2023 SugimotoKoitsu reviewed the app: "Slow communication with the car: This app is pretty limited in what it does, the most useful to me being setting the cabin temperature in winter and checking charging status at work so I don’t hog one of the only two level 2 chargers at work all day. I like to take my 2023 Leaf SV+ off the charger as it nears 100%. But the app is very slow to update the status of the battery. I guess Nissan is polling the car through its cellular connection or a satellite connection, because I can’t log the car into the WiFi network at work. So maybe those methods are time consuming but it takes about five minutes to update the battery status, which is very annoying. It seems like there’s room for improvement in efficiency."](review.png)
 
-My main issue with the app is that it lacks a home screen widget I could use to quickly check my car's battery status, unlike apps for other electric car brands like [Rivian](https://riviantrackr.com/news/rivian-release-mobile-app-2-8-0-update/), [Ford](https://9to5mac.com/2024/11/12/fordpass-control-center-home-screen-widget/), and [Lucid](https://apps.apple.com/us/app/lucid-motors/id1579793272).
+My main issue with the app is that it lacks a home screen widget I could use to quickly check my car's battery status, unlike apps for other electric car brands like [Rivian](https://9to5mac.com/2024/04/03/rivian-lock-screen-widget-support/), [Ford](https://9to5mac.com/2024/11/12/fordpass-control-center-home-screen-widget/), and [Lucid](https://apps.apple.com/us/app/lucid-motors/id1579793272).
 
 ## Third-Party Apps
 
