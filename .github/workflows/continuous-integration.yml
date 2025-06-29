@@ -24,6 +24,10 @@ jobs:
         with:
           runCmd: hugo --minify --verbose
       - name: Test
-        uses: devcontainers/ci@v0.3
+        uses: Wandalen/wretry.action@v3
         with:
-          runCmd: htmltest
+          action: devcontainers/ci@v0.3
+          attempt_limit: 3
+          attempt_delay: 2000 # ms
+          with: |
+            runCmd: htmltest
