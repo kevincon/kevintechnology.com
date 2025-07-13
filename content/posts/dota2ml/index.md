@@ -42,7 +42,7 @@ We were very inspired by the accuracy of Dota 2 Counter-Pick, and we set out to 
 
 ## Data Collection
 
-We used the [Steam Web API](https://dev.dota2.com/forum/dota-2/spectating/replays/webapi/48733-dota-2-match-history-webapi?t=47115) for collecting data about public Dota 2 matches. We wrote a Python script (called [`dotabot2.py`](https://github.com/kevincon/dotaml/blob/master/data_collection/dotabot2.py?source=cc) in the GitHub repository) and set it up on a cron job to record data from the 500 most recent public matches every 20 minutes. We only considered matches that satisfied the following requirements:
+We used the [Steam Web API](https://web.archive.org/web/20220517134405/https://dev.dota2.com/forum/dota-2/spectating/replays/webapi/48733-dota-2-match-history-webapi?t=47115) for collecting data about public Dota 2 matches. We wrote a Python script (called [`dotabot2.py`](https://github.com/kevincon/dotaml/blob/master/data_collection/dotabot2.py?source=cc) in the GitHub repository) and set it up on a cron job to record data from the 500 most recent public matches every 20 minutes. We only considered matches that satisfied the following requirements:
 
 1. The game mode is either all pick, single draft, all random, random draft, captain’s draft, captain’s mode, or least played. These game modes are the closest to the true vision of Dota 2, and every hero has the potential to show up in a match.
 2. The skill level of the players is “very-high,” which corresponds to roughly the top 8% of players. We believe utilizing only very-high skill level matches allows us to best represent heroes at their full potential.
