@@ -26,11 +26,7 @@ She only gave me one rule to follow:
 
 For reasons that will become apparent later in the story, it is important to mention that I often teased Kacha that I might just propose with a pizza box if I could not think of anything better. [This form of proposal actually seems to be fairly common](https://www.womangettingmarried.com/pizza-marriage-proposals/), so no offense to others who proposed that way, but I was just joking because I knew I could think of something that Kacha would enjoy more.
 
-Inspiration struck a few months ago when I won a Windows Mixed Reality ([read: virtual reality](https://www.theverge.com/2017/9/1/16232704/microsoft-windows-mixed-reality-headsets-controllers)) headset at a hackathon:
-
-{{< twitter user="nltmcd" id="974436690453516288" >}}
-
-_A tweet from one of my teammates announcing our victory. That's me fourth from the left in the picture._
+Inspiration struck a few months ago when I won a Windows Mixed Reality ([read: virtual reality](https://www.theverge.com/2017/9/1/16232704/microsoft-windows-mixed-reality-headsets-controllers)) headset at a hackathon.
 
 While working on [that hackathon project](https://devpost.com/software/paint-mate-ar) I learned the basics of how to create a VR experience using the Unity game engine, so I came up with the idea that I would surprise Kacha by creating a VR experience for her as part of my proposal.
 
