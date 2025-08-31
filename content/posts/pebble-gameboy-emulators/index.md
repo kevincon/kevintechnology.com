@@ -20,7 +20,7 @@ Both versions only ran original Game Boy ROMs (i.e. no Game Boy Color ROMs), alt
 
 ## Version One: Custom Firmware
 
-Around May 2015 I worked with [Varun Reddy](https://www.linkedin.com/in/varunred/) to port a Game Boy emulator called [BitBoy](https://bitboxconsole.blogspot.fr/2014/01/bitboy-bitbox-emulator-for-bitbox.html) (which is itself an ARM port of the [gnuboy Game Boy emulator](https://sourceforge.net/projects/gnuboy/)) to the Pebble Time.
+Around May 2015 I worked with [Varun Reddy](https://www.linkedin.com/in/varunred/) to port a Game Boy emulator called [BitBoy](https://bitboxconsole.blogspot.com/2014/01/bitboy-bitbox-emulator-for-bitbox.html) (which is itself an ARM port of the [gnuboy Game Boy emulator](https://sourceforge.net/projects/gnuboy/)) to the Pebble Time.
 
 We picked BitBoy because it was written in C and had already been demonstrated to run on the ARM Cortex M4 STM32F405 CPU (168 MHz 192 KB RAM), which is in the same family of processors as the Pebble Time’s ARM Cortex M4 STM32F439ZG CPU (run at 100 MHz, 256 KB RAM).
 
