@@ -1,4 +1,4 @@
-A little about me:
+<h3>About Me</h3>
 
 I've been lucky to have worked on the following projects:
 
@@ -11,4 +11,4 @@ I've been lucky to have worked on the following projects:
 [Intel Vaunt smart glasses](https://www.theverge.com/2018/4/18/17255354/intel-vaunt-shut-down) \
 ⌚️ app/UI firmware for [Pebble smart watches](https://en.wikipedia.org/wiki/Pebble_(watch))
 
-I also enjoy drinking cold brew, solving puzzles, playing video games, and birdwatching.
+I also enjoy drinking cold brew, solving puzzles, playing video games, birdwatching, and helping my wife with [Good Bird Bakery](https://goodbirdbakery.com).
