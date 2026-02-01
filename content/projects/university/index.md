@@ -59,7 +59,7 @@ A quadrotor equipped with a Microsoft Kinect that creates 3D maps of buildings.
 
 Teammates: Kelsey Duncombe-Smith, [Bill Etter](http://williametter.com), Paul Gurniak, Matt Hale, Alfredo Muniz, [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
-Advisor: [Rahul Mangharam](http://www.seas.upenn.edu/~rahulm/)
+Advisor: Rahul Mangharam
 
 Awards:
 
@@ -138,7 +138,7 @@ A prototype automotive architecture for plug-n-play services.
 
 Teammates: Gabe Torres, [Teddy Zhang](https://www.linkedin.com/in/ted-zhang-a854b129/)
 
-Advisor: [Rahul Mangharam](http://www.seas.upenn.edu/~rahulm/)
+Advisor: Rahul Mangharam
 
 Awards:
 
