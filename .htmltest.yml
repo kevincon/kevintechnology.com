@@ -3,7 +3,9 @@ IgnoreURLs:
   # These domains block htmltest
   - "askubuntu.com"
   - "blogspot.com"
+  - "ladyada.net"
   - "linkedin.com"
+  - "mynissanleaf.com"
   - "soundcloud.com"
   - "speakev.com"
   - "stackoverflow.com"
