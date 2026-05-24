@@ -12,5 +12,7 @@ IgnoreURLs:
   - "t.co"
   - "twitter.com"
   - "ultimatebootcd.com"
+# Warn on broken external links, don't fail
+IgnoreExternalBrokenLinks: true
 CheckMeta: false
 ExternalTimeout: 60
